@@ -1,0 +1,100 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=5
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='AxialRatioValue'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='GainLHCP'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='GainRHCP'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=3
+		$begin 'SimValueParams'
+			QuantityName='St(Rectangle1_T1,Rectangle1_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=4
+		$begin 'SimValueParams'
+			QuantityName='GainTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=29
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=30
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=3
+						SimValueContext(0, 0, 2, 0, false, false, 23, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=1842
+						$begin 'MinorVVMap'
+							MajorVariation='Freq=\'2.422GHz\' groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'4.55cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\''
+							MinorCacheFile='min4A3F18492159406435825.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=3
+						SimValueContext(0, 0, 2, 0, false, false, 21, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=1842
+						$begin 'MinorVVMap'
+							MajorVariation='Freq=\'2.422GHz\' groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'4.55cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\''
+							MinorCacheFile='min4A3F18492159406435826.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=439
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=1
+						SimValueContext(0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=1842
+						$begin 'MinorVVMap'
+							MajorVariation='groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'4.55cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\''
+							MinorCacheFile='min4A3F18492159406435827.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'
