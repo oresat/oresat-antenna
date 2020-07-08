@@ -1,9 +1,9 @@
 $begin 'CacheDataVersion'
-	DataVersion=53
+	DataVersion=54
 $end 'CacheDataVersion'
 $begin 'VariableValues'
 	Helix_Diameter='3.94cm'
-	Helix_Spacing='1.79cm'
+	Helix_Spacing='2.86cm'
 	Helix_Gap='0.05cm'
 	Wire_Diameter='0.08cm'
 	NumberOfTurns='16'

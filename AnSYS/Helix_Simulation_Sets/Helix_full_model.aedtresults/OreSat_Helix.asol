@@ -1,11 +1,11 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002020, month=000000000007, day=000000000007, hour=000000000018, min=000000000002, sec=000000000019)
+    time(year=000000002020, month=000000000007, day=000000000007, hour=000000000020, min=000000000027, sec=000000000044)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000010683, lin=000000000279, lvl=000000000000)
+    $index$(pos=000000013321, lin=000000000327, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
 $begin 'SolutionBlock1'
@@ -14,10 +14,11 @@ $begin 'SolutionBlock1'
 	VersionID=1698
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=1777
+	NextUniqueID=1863
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'3.94cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'1.79cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', ID=1651)
+		Map(V='groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'3.94cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'2.86cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', ID=1814)
 		Map(V='groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'3.94cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', ID=1650)
 		Map(V='groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'39.4cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', ID=1648)
 		Map(V='groundX=\'10cm\' groundY=\'10cm\' groundZ=\'20cm\' Helix_Diameter=\'4.55cm\' Helix_Gap=\'0.05cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' pZx=\'-49.9mm\' pZy=\'-49.9mm\' pZz=\'-0.6mm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', ID=1424)
@@ -27,6 +28,7 @@ $begin 'SolutionBlock1'
 	$end 'LinkedDataList'
 	$begin 'InitialMeshes'
 		M(VID=1651, Ver=1698, Dir='DV1651_V1698.imesh/')
+		M(VID=1814, Ver=1698, Dir='DV1814_V1698.imesh/')
 	$end 'InitialMeshes'
 	MeshAssemVersionID=18
 	$begin 'NextAssemVersionID'
@@ -37,14 +39,16 @@ $begin 'SolutionBlock1'
 		$begin 'DefMeshes_Comp-1'
 			DefinitionID=-1
 			VersionID=17
-			VIDMap('Helix_Diameter=\'3.94cm\' Helix_Spacing=\'1.79cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', 1769, 'Helix_Diameter=\'4.55cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', 1497, 'Helix_Diameter=\'5.53451185644093cm\' Helix_Spacing=\'3.61740775780511cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', 1610)
+			VIDMap('Helix_Diameter=\'3.94cm\' Helix_Spacing=\'1.79cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', 1769, 'Helix_Diameter=\'3.94cm\' Helix_Spacing=\'2.86cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', 1860, 'Helix_Diameter=\'4.55cm\' Helix_Spacing=\'3.8cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', 1497, 'Helix_Diameter=\'5.53451185644093cm\' Helix_Spacing=\'3.61740775780511cm\' NumberOfTurns=\'16\' p=\'0\' Pin_Diameter=\'0.1cm\' Pin_Length=\'0.05cm\' Wire_Diameter=\'0.08cm\' zC=\'0\'', 1610)
 			DM(VID=1769, Ver=17, Dir='NDV1769_V17.dmesh/')
+			DM(VID=1860, Ver=17, Dir='NDV1860_V17.dmesh/')
 		$end 'DefMeshes_Comp-1'
 	$end 'DefinitionMeshes'
 	$begin 'MI'
 		$begin 'SubData'
 			ID=0
 			MI(VID=1651, Ver=1698, Dir='DV1651_MI0_V1698.sd/')
+			MI(VID=1814, Ver=1698, Dir='DV1814_MI0_V1698.sd/')
 		$end 'SubData'
 	$end 'MI'
 $end 'SolutionBlock1'
@@ -61,12 +65,14 @@ $begin 'SolutionBlock9'
 	VersionID=1698
 	$begin 'EmConvergenceData'
 		EmConv(VID=1651, Ver=1698, EmConv='DV1651_S28_V1698.EMConvData')
+		EmConv(VID=1814, Ver=1698, EmConv='DV1814_S28_V1698.EMConvData')
 	$end 'EmConvergenceData'
 	IsImported=false
 	IsTable=false
 	SolveSetupID=1
 	$begin 'CurrMeshes'
 		M(VID=1651, Ver=1698, Dir='DV1651_S28_V1698.cmesh/')
+		M(VID=1814, Ver=1698, Dir='DV1814_S28_V1698.cmesh/')
 	$end 'CurrMeshes'
 	MeshAssemVersionID=15
 	$begin 'NextAssemVersionID'
@@ -77,22 +83,27 @@ $begin 'SolutionBlock9'
 		$begin 'SubData'
 			ID=0
 			ADP(VID=1651, Ver=1698, Dir='DV1651_S28_ADP0_V1698.sd/')
+			ADP(VID=1814, Ver=1698, Dir='DV1814_S28_ADP0_V1698.sd/')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=1
 			ADP(VID=1651, Ver=1698, Dir='DV1651_S28_ADP1_V1698.sd/')
+			ADP(VID=1814, Ver=1698, Dir='DV1814_S28_ADP1_V1698.sd/')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=2
 			ADP(VID=1651, Ver=1698, Dir='DV1651_S28_ADP2_V1698.sd/')
+			ADP(VID=1814, Ver=1698, Dir='DV1814_S28_ADP2_V1698.sd/')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=3
 			ADP(VID=1651, Ver=1698, Dir='DV1651_S28_ADP3_V1698.sd/')
+			ADP(VID=1814, Ver=1698, Dir='DV1814_S28_ADP3_V1698.sd/')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=4
 			ADP(VID=1651, Ver=1698, Dir='DV1651_S28_ADP4_V1698.sd/')
+			ADP(VID=1814, Ver=1698, Dir='DV1814_S28_ADP4_V1698.sd/')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=5
@@ -103,18 +114,22 @@ $begin 'SolutionBlock9'
 		$begin 'SubData'
 			ID=1
 			SU(VID=1651, Ver=1698, File='DV1651_S28_SD1_V1698.su')
+			SU(VID=1814, Ver=1698, File='DV1814_S28_SD1_V1698.su')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=2
 			SU(VID=1651, Ver=1698, File='DV1651_S28_SD2_V1698.su')
+			SU(VID=1814, Ver=1698, File='DV1814_S28_SD2_V1698.su')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=3
 			SU(VID=1651, Ver=1698, File='DV1651_S28_SD3_V1698.su')
+			SU(VID=1814, Ver=1698, File='DV1814_S28_SD3_V1698.su')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=4
 			SU(VID=1651, Ver=1698, File='DV1651_S28_SD4_V1698.su')
+			SU(VID=1814, Ver=1698, File='DV1814_S28_SD4_V1698.su')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=5
@@ -123,17 +138,21 @@ $begin 'SolutionBlock9'
 	$end 'SU'
 	$begin 'WaveAdapt'
 		WA(VID=1651, Ver=1698, A=1)
+		WA(VID=1814, Ver=1698, A=1)
 	$end 'WaveAdapt'
 	$begin 'LastPassNumbers'
 		LP(VID=1651, Ver=1698, P=5)
+		LP(VID=1814, Ver=1698, P=4)
 	$end 'LastPassNumbers'
 	$begin 'Profiles'
 		P(VID=1651, Ver=1698, File='DV1651_S28_V1698.profile')
+		P(VID=1814, Ver=1698, File='DV1814_S28_V1698.profile')
 	$end 'Profiles'
 	$begin 'MI'
 		$begin 'SubData'
 			ID=0
 			MI(VID=1651, Ver=1698, Dir='DV1651_S28_MI0_V1698.sd/')
+			MI(VID=1814, Ver=1698, Dir='DV1814_S28_MI0_V1698.sd/')
 		$end 'SubData'
 	$end 'MI'
 $end 'SolutionBlock9'
@@ -143,6 +162,7 @@ $begin 'SolutionBlock6'
 	V=1698
 	$begin 'States'
 		F(VID=1651, Ver=1698)
+		F(VID=1814, Ver=1698)
 	$end 'States'
 	$begin 'Definition'
 		SamplingInterpolation=false
@@ -159,18 +179,22 @@ $begin 'SolutionBlock6'
 		$begin 'SubData'
 			ID=1
 			M(VID=1651, Ver=1698, File='DV1651_SOL29_M1_V1698.sd')
+			M(VID=1814, Ver=1698, File='DV1814_SOL29_M1_V1698.sd')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=2
 			M(VID=1651, Ver=1698, File='DV1651_SOL29_M2_V1698.sd')
+			M(VID=1814, Ver=1698, File='DV1814_SOL29_M2_V1698.sd')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=3
 			M(VID=1651, Ver=1698, File='DV1651_SOL29_M3_V1698.sd')
+			M(VID=1814, Ver=1698, File='DV1814_SOL29_M3_V1698.sd')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=4
 			M(VID=1651, Ver=1698, File='DV1651_SOL29_M4_V1698.sd')
+			M(VID=1814, Ver=1698, File='DV1814_SOL29_M4_V1698.sd')
 		$end 'SubData'
 		$begin 'SubData'
 			ID=5
@@ -184,6 +208,7 @@ $begin 'SolutionBlock7'
 	V=1698
 	$begin 'States'
 		F(VID=1651, Ver=1698)
+		F(VID=1814, Ver=1698)
 	$end 'States'
 	$begin 'Definition'
 		SamplingInterpolation=false
@@ -200,6 +225,7 @@ $begin 'SolutionBlock7'
 		$begin 'SubData'
 			ID=0
 			M(VID=1651, Ver=1698, File='DV1651_SOL30_M0_V1698.sd')
+			M(VID=1814, Ver=1698, File='DV1814_SOL30_M0_V1698.sd')
 		$end 'SubData'
 	$end 'M'
 	$begin 'Fields'
@@ -209,6 +235,11 @@ $begin 'SolutionBlock7'
 			Ver=1698
 			F(DblID=1502, Dir='DV1651_S30_V1698_F1502/')
 		$end 'DataMap'
+		$begin 'DataMap'
+			VID=1814
+			Ver=1698
+			F(DblID=1502, Dir='DV1814_S30_V1698_F1502/')
+		$end 'DataMap'
 	$end 'Fields'
 $end 'SolutionBlock7'
 $begin 'SolutionBlock8'
@@ -217,6 +248,7 @@ $begin 'SolutionBlock8'
 	V=1698
 	$begin 'States'
 		F(VID=1651, Ver=1698)
+		F(VID=1814, Ver=1698)
 	$end 'States'
 	$begin 'Definition'
 		SamplingInterpolation=false
@@ -233,13 +265,15 @@ $begin 'SolutionBlock8'
 		$begin 'SubData'
 			ID=0
 			M(VID=1651, Ver=1698, File='DV1651_SOL439_M0_V1698.sd')
+			M(VID=1814, Ver=1698, File='DV1814_SOL439_M0_V1698.sd')
 		$end 'SubData'
 	$end 'M'
 	$begin 'TransientSolveStauts'
 		SS(VID=1651, Ver=1698, SS=1)
+		SS(VID=1814, Ver=1698, SS=1)
 	$end 'TransientSolveStauts'
 	$begin 'SolverUsage'
-		IDDblMap(1516, 2622000000, 1517, 2122000000, 1519, 2522000000, 1520, 2572000000, 1521, 2597000000, 1522, 2547000000, 1523, 2472000000, 1524, 2447000000, 1525, 2272000000, 1526, 2347000000, 1527, 2309500000, 1774, 2197000000, 1775, 2234500000, 1776, 2253250000)
+		IDDblMap(1516, 2622000000, 1517, 2122000000, 1519, 2522000000, 1520, 2572000000, 1521, 2597000000, 1522, 2547000000, 1523, 2472000000, 1524, 2447000000, 1525, 2272000000, 1526, 2347000000, 1527, 2309500000, 1774, 2197000000, 1775, 2234500000, 1776, 2253250000, 1862, 2384500000)
 		$begin 'DataMap'
 			VID=1651
 			Ver=1698
@@ -254,6 +288,20 @@ $begin 'SolutionBlock8'
 			SU(DblID=1522, SU='DV1651_S439_V1698_F1522_SU.txt')
 			SU(DblID=1520, SU='DV1651_S439_V1698_F1520_SU.txt')
 			SU(DblID=1516, SU='DV1651_S439_V1698_F1516_SU.txt')
+		$end 'DataMap'
+		$begin 'DataMap'
+			VID=1814
+			Ver=1698
+			SU(DblID=1517, SU='DV1814_S439_V1698_F1517_SU.txt')
+			SU(DblID=1774, SU='DV1814_S439_V1698_F1774_SU.txt')
+			SU(DblID=1525, SU='DV1814_S439_V1698_F1525_SU.txt')
+			SU(DblID=1527, SU='DV1814_S439_V1698_F1527_SU.txt')
+			SU(DblID=1526, SU='DV1814_S439_V1698_F1526_SU.txt')
+			SU(DblID=1862, SU='DV1814_S439_V1698_F1862_SU.txt')
+			SU(DblID=1519, SU='DV1814_S439_V1698_F1519_SU.txt')
+			SU(DblID=1522, SU='DV1814_S439_V1698_F1522_SU.txt')
+			SU(DblID=1520, SU='DV1814_S439_V1698_F1520_SU.txt')
+			SU(DblID=1516, SU='DV1814_S439_V1698_F1516_SU.txt')
 		$end 'DataMap'
 	$end 'SolverUsage'
 $end 'SolutionBlock8'
@@ -288,16 +336,16 @@ $begin 'OptimetricsResults'
 $end 'OptimetricsResults'
 $begin '$index$'
 	$begin '$index$'
-		OptimetricsResults(pos=10600, lin=276, lvl=0)
-		BlockMapName(pos=3219, lin=41, lvl=0)
-		SolutionBlock6(pos=5757, lin=130, lvl=0)
-		SolutionBlock7(pos=6671, lin=171, lvl=0)
-		SolutionBlock8(pos=7346, lin=204, lvl=0)
-		SolutionBlock9(pos=3716, lin=48, lvl=0)
+		OptimetricsResults(pos=13238, lin=324, lvl=0)
+		BlockMapName(pos=3840, lin=45, lvl=0)
+		SolutionBlock6(pos=7207, lin=149, lvl=0)
+		SolutionBlock7(pos=8377, lin=195, lvl=0)
+		SolutionBlock8(pos=9242, lin=235, lvl=0)
+		SolutionBlock9(pos=4337, lin=52, lvl=0)
 		SolutionBlock1(pos=370, lin=1, lvl=0)
-		ResponseSurfaceCache(pos=9507, lin=250, lvl=0)
-		OptimetricsResult1(pos=9589, lin=253, lvl=0)
+		ResponseSurfaceCache(pos=12145, lin=298, lvl=0)
+		OptimetricsResult1(pos=12227, lin=301, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=10683, lin=279, lvl=0)
+		$index$(pos=13321, lin=327, lvl=0)
 	$end '$index$'
 $end '$index$'
