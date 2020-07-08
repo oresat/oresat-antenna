@@ -17,3 +17,5 @@
 		* Simulations done with some material properties accounted for.
 	* [3_Defined_Geometry]
 		* Simulations done with a number of geometric definitions from the solidworks Oresat Structure
+	* Helix_full_model
+		* This file will be used to keep up to date on the expected output for the current mechanical specs
