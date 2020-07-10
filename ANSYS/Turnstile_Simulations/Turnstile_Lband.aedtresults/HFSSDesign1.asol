@@ -1,0 +1,197 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002020, month=000000000007, day=000000000010, hour=000000000014, min=000000000011, sec=000000000005)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000006065, lin=000000000177, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=562
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=622
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=491)
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' Sband_len=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.5mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zPlane=\'-10mm\'', ID=482)
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' Sband_len=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.5mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zPlane=\'0mm\'', ID=419)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=491, Ver=562, Dir='DV491_V562.imesh/')
+	$end 'InitialMeshes'
+	MeshAssemVersionID=70
+	$begin 'NextAssemVersionID'
+		NextUniqueID=71
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'DefinitionMeshes'
+		$begin 'DefMeshes_Comp-1'
+			DefinitionID=-1
+			VersionID=69
+			VIDMap('Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', 606)
+			DM(VID=606, Ver=69, Dir='NDV606_V69.dmesh/')
+		$end 'DefMeshes_Comp-1'
+	$end 'DefinitionMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=491, Ver=562, Dir='DV491_MI0_V562.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=2, Instance=\'SetupDefinition\', Solution=-1, VersionID=562)'='SolutionBlock10'
+	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=3, VersionID=562)'='SolutionBlock8'
+	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=4, VersionID=562)'='SolutionBlock9'
+$end 'BlockMapName'
+$begin 'SolutionBlock10'
+	SimSetupID=2
+	SimSetupName='Lband'
+	VersionID=562
+	$begin 'EmConvergenceData'
+		EmConv(VID=491, Ver=562, EmConv='DV491_S2_V562.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=491, Ver=562, Dir='DV491_S2_V562.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=63
+	$begin 'NextAssemVersionID'
+		NextUniqueID=64
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=0
+			ADP(VID=491, Ver=562, Dir='DV491_S2_ADP0_V562.sd/')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			ADP(VID=491, Ver=562, Dir='DV491_S2_ADP1_V562.sd/')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			ADP(VID=491, Ver=562, Dir='DV491_S2_ADP2_V562.sd/')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			ADP(VID=491, Ver=562, Dir='DV491_S2_ADP3_V562.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=491, Ver=562, File='DV491_S2_SD1_V562.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=491, Ver=562, File='DV491_S2_SD2_V562.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			SU(VID=491, Ver=562, File='DV491_S2_SD3_V562.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=491, Ver=562, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=491, Ver=562, P=3)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=491, Ver=562, File='DV491_S2_V562.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=491, Ver=562, Dir='DV491_S2_MI0_V562.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock10'
+$begin 'SolutionBlock8'
+	SolutionName='AdaptivePass'
+	SolutionID=3
+	V=562
+	$begin 'States'
+		F(VID=491, Ver=562)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(1265000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=491, Ver=562, File='DV491_SOL3_M1_V562.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=491, Ver=562, File='DV491_SOL3_M2_V562.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=491, Ver=562, File='DV491_SOL3_M3_V562.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock8'
+$begin 'SolutionBlock9'
+	SolutionName='LastAdaptive'
+	SolutionID=4
+	V=562
+	$begin 'States'
+		F(VID=491, Ver=562)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(1265000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=491, Ver=562, File='DV491_SOL4_M0_V562.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(611, 1265000000)
+		$begin 'DataMap'
+			VID=491
+			Ver=562
+			F(DblID=611, Dir='DV491_S4_V562_F611/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock9'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=2771, lin=39, lvl=0)
+		SolutionBlock8(pos=4716, lin=111, lvl=0)
+		SolutionBlock9(pos=5407, lin=144, lvl=0)
+		SolutionBlock10(pos=3153, lin=45, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=6065, lin=177, lvl=0)
+	$end '$index$'
+$end '$index$'

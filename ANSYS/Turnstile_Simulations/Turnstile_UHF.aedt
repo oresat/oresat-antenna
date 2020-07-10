@@ -12576,6 +12576,8 @@ $begin 'AnsoftProject'
 		$begin 'PortFieldDisplay'
 			$begin 'PortFieldDisplay'
 				ScaleFactor=5
+				Solution='UHF : LastAdaptive'
+				Frequency='0.4365GHz'
 			$end 'PortFieldDisplay'
 		$end 'PortFieldDisplay'
 		$begin 'FieldsReporter'
@@ -15905,6 +15907,10 @@ $begin 'AnsoftProject'
 													ID=9
 													Name='ColorKey'
 												$end 'Plot3DColorKeyDataSource'
+												$begin 'Plot3DPolarCurveDataSource'
+													ID=20
+													Name='dB(GainRHCP)'
+												$end 'Plot3DPolarCurveDataSource'
 											$end 'Plot3DDataSources'
 											$begin 'Plot3DAttributesManager'
 												$begin 'PlotAttributeStore'
@@ -15955,6 +15961,10 @@ $begin 'AnsoftProject'
 											ID=9
 											Name='ColorKey'
 										$end 'Plot3DColorKeyDataSource'
+										$begin 'Plot3DPolarCurveDataSource'
+											ID=20
+											Name='dB(GainRHCP)'
+										$end 'Plot3DPolarCurveDataSource'
 									$end 'Plot3DDataSources'
 									$begin 'Plot3DAttributesManager'
 										$begin 'PlotAttributeStore'
@@ -16017,6 +16027,10 @@ $begin 'AnsoftProject'
 													ID=9
 													Name='ColorKey'
 												$end 'Plot3DColorKeyDataSource'
+												$begin 'Plot3DPolarCurveDataSource'
+													ID=20
+													Name='dB(GainLHCP)'
+												$end 'Plot3DPolarCurveDataSource'
 											$end 'Plot3DDataSources'
 											$begin 'Plot3DAttributesManager'
 												$begin 'PlotAttributeStore'
@@ -16067,6 +16081,10 @@ $begin 'AnsoftProject'
 											ID=9
 											Name='ColorKey'
 										$end 'Plot3DColorKeyDataSource'
+										$begin 'Plot3DPolarCurveDataSource'
+											ID=20
+											Name='dB(GainLHCP)'
+										$end 'Plot3DPolarCurveDataSource'
 									$end 'Plot3DDataSources'
 									$begin 'Plot3DAttributesManager'
 										$begin 'PlotAttributeStore'
@@ -17916,10 +17934,10 @@ $begin 'AnsoftProject'
 														DataSourceID=13
 														$begin 'PolarLayoutAttribute'
 															$begin 'PolarCircleRect'
-																Top=174
-																Left=9788
-																Bottom=9825
-																Right=137
+																Top=222
+																Left=9727
+																Bottom=9778
+																Right=171
 															$end 'PolarCircleRect'
 															$begin 'AxisRect'
 																Top=0
@@ -88210,7 +88228,7 @@ Q=='
 		DesignName='HFSSDesign1'
 		Notes=''
 		Factory='HFSS'
-		IsSolved=false
+		IsSolved=true
 		'Nominal Setups'[1: 'UHF']
 		'Nominal Setup Types'[1: '']
 		'Optimetrics Setups'[0:]

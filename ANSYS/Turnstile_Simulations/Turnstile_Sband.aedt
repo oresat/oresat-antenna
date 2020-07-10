@@ -12533,6 +12533,8 @@ $begin 'AnsoftProject'
 		$begin 'PortFieldDisplay'
 			$begin 'PortFieldDisplay'
 				ScaleFactor=5
+				Solution='Sband : LastAdaptive'
+				Frequency='2.422GHz'
 			$end 'PortFieldDisplay'
 		$end 'PortFieldDisplay'
 		$begin 'FieldsReporter'
@@ -15862,6 +15864,10 @@ $begin 'AnsoftProject'
 													ID=9
 													Name='ColorKey'
 												$end 'Plot3DColorKeyDataSource'
+												$begin 'Plot3DPolarCurveDataSource'
+													ID=20
+													Name='dB(GainRHCP)'
+												$end 'Plot3DPolarCurveDataSource'
 											$end 'Plot3DDataSources'
 											$begin 'Plot3DAttributesManager'
 												$begin 'PlotAttributeStore'
@@ -15912,6 +15918,10 @@ $begin 'AnsoftProject'
 											ID=9
 											Name='ColorKey'
 										$end 'Plot3DColorKeyDataSource'
+										$begin 'Plot3DPolarCurveDataSource'
+											ID=20
+											Name='dB(GainRHCP)'
+										$end 'Plot3DPolarCurveDataSource'
 									$end 'Plot3DDataSources'
 									$begin 'Plot3DAttributesManager'
 										$begin 'PlotAttributeStore'
@@ -15974,6 +15984,10 @@ $begin 'AnsoftProject'
 													ID=9
 													Name='ColorKey'
 												$end 'Plot3DColorKeyDataSource'
+												$begin 'Plot3DPolarCurveDataSource'
+													ID=20
+													Name='dB(GainLHCP)'
+												$end 'Plot3DPolarCurveDataSource'
 											$end 'Plot3DDataSources'
 											$begin 'Plot3DAttributesManager'
 												$begin 'PlotAttributeStore'
@@ -16024,6 +16038,10 @@ $begin 'AnsoftProject'
 											ID=9
 											Name='ColorKey'
 										$end 'Plot3DColorKeyDataSource'
+										$begin 'Plot3DPolarCurveDataSource'
+											ID=20
+											Name='dB(GainLHCP)'
+										$end 'Plot3DPolarCurveDataSource'
 									$end 'Plot3DDataSources'
 									$begin 'Plot3DAttributesManager'
 										$begin 'PlotAttributeStore'
@@ -17873,10 +17891,10 @@ $begin 'AnsoftProject'
 														DataSourceID=13
 														$begin 'PolarLayoutAttribute'
 															$begin 'PolarCircleRect'
-																Top=174
-																Left=9788
-																Bottom=9825
-																Right=137
+																Top=222
+																Left=9727
+																Bottom=9778
+																Right=171
 															$end 'PolarCircleRect'
 															$begin 'AxisRect'
 																Top=0
@@ -17985,7 +18003,7 @@ $begin 'AnsoftProject'
 						$begin '3D RHCP Gain (bottom)'
 							ReportID=2
 							$begin 'WindowInfoList'
-								R3DWindowPos(Report3D(View(WindowPos(5, -1, -1, -13, -58, 196, 196, 2598, 1303))))
+								R3DWindowPos(Report3D(View(WindowPos(3, -1, -1, -13, -58, 196, 196, 2598, 1303))))
 							$end 'WindowInfoList'
 						$end '3D RHCP Gain (bottom)'
 						$begin '3D LHCP Gain (top)'
@@ -88167,7 +88185,7 @@ Q=='
 		DesignName='HFSSDesign1'
 		Notes=''
 		Factory='HFSS'
-		IsSolved=false
+		IsSolved=true
 		'Nominal Setups'[1: 'Sband']
 		'Nominal Setup Types'[1: '']
 		'Optimetrics Setups'[0:]
