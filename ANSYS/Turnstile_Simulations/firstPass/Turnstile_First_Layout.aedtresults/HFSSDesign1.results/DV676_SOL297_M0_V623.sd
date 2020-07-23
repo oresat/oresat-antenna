@@ -1,0 +1,935 @@
+$begin 'soln'
+	ObjectType='HfssModal'
+	SolutionType='HfssInterpolatingSweep'
+	MajorVersion=2
+	MinorVersion=0
+	Producer=''
+	Name='Sweep'
+	AdaptivePass=-1
+	$begin 'Frequencies'
+		$begin 'DataPoint'
+			Frequency=476000000
+			DataType='None'
+			$begin 'SMatrix'
+				m=4
+				n=4
+				$begin 'r0'
+					c(0.5309918944764314, 0.2827006641030371)
+					c(0.07470941859479728, -0.2694794007031959)
+					c(0.01007036013625765, -0.02152760657793197)
+					c(0.07534238863359317, -0.2705091828548126)
+				$end 'r0'
+				$begin 'r1'
+					c(0.07470934784029419, -0.2694794021447856)
+					c(0.5278047700782567, 0.2920720432149549)
+					c(0.07602124194336478, -0.2693008447418922)
+					c(0.009942694427101243, -0.02121501177278033)
+				$end 'r1'
+				$begin 'r2'
+					c(0.01007031976664432, -0.02152759126520425)
+					c(0.0760213103550083, -0.2693008451156673)
+					c(0.5253993798246483, 0.289340676503783)
+					c(0.07672149550527771, -0.2703690062826969)
+				$end 'r2'
+				$begin 'r3'
+					c(0.07534238103034965, -0.2705092104561182)
+					c(0.009942690280136448, -0.02121503210969794)
+					c(0.07672149441458208, -0.2703689846438311)
+					c(0.5263889266667539, 0.2865619551576807)
+				$end 'r3'
+			$end 'SMatrix'
+			$begin 'Port ABCD'
+				$begin 'AmI_matrix'
+					Rows()
+					Cols()
+					Values()
+				$end 'AmI_matrix'
+				$begin 'B_matrix'
+					Rows(0, 1, 2, 3)
+					Cols(0, 1, 2, 3)
+					Values(c(0, -1.778452797345534), c(0, -1.778452797345535), c(0, -1.778452797345534), c(0, -1.778452797345533))
+				$end 'B_matrix'
+				$begin 'C_matrix'
+					Rows()
+					Cols()
+					Values()
+				$end 'C_matrix'
+				$begin 'DmI_matrix'
+					Rows()
+					Cols()
+					Values()
+				$end 'DmI_matrix'
+			$end 'Port ABCD'
+			EnergyError=0
+			IeEnergyError=0
+			$begin 'PortImpedance'
+				n=4
+				$begin 'r0'
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r0'
+			$end 'PortImpedance'
+			$begin 'Gamma'
+				n=4
+				$begin 'r0'
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r0'
+			$end 'Gamma'
+			$begin 'Zpi'
+				n=4
+				$begin 'r0'
+					c(50, 0)
+					c(50, 0)
+					c(50, 0)
+					c(50, 0)
+				$end 'r0'
+			$end 'Zpi'
+			$begin 'Zwave'
+				n=4
+				$begin 'r0'
+					c(49.99999991586834, 0)
+					c(49.99999994188578, 0)
+					c(49.99999991635607, 0)
+					c(49.99999991609835, 0)
+				$end 'r0'
+			$end 'Zwave'
+			$begin 'TerminalTMatrix'
+				m=4
+				n=4
+				$begin 'r0'
+					c(10, 0)
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r0'
+				$begin 'r1'
+					c(0, 0)
+					c(10, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r1'
+				$begin 'r2'
+					c(0, 0)
+					c(0, 0)
+					c(10, 0)
+					c(0, 0)
+				$end 'r2'
+				$begin 'r3'
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+					c(10, 0)
+				$end 'r3'
+			$end 'TerminalTMatrix'
+			$begin 'TerminalPMatrix'
+				m=4
+				n=4
+				$begin 'r0'
+					c(2, 0)
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r0'
+				$begin 'r1'
+					c(0, 0)
+					c(2, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r1'
+				$begin 'r2'
+					c(0, 0)
+					c(0, 0)
+					c(2, 0)
+					c(0, 0)
+				$end 'r2'
+				$begin 'r3'
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+					c(2, 0)
+				$end 'r3'
+			$end 'TerminalPMatrix'
+			$begin 'TerminalRMatrix'
+				m=4
+				n=4
+				$begin 'r0'
+					c(1, 0)
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r0'
+				$begin 'r1'
+					c(0, 0)
+					c(1, 0)
+					c(0, 0)
+					c(0, 0)
+				$end 'r1'
+				$begin 'r2'
+					c(0, 0)
+					c(0, 0)
+					c(1, 0)
+					c(0, 0)
+				$end 'r2'
+				$begin 'r3'
+					c(0, 0)
+					c(0, 0)
+					c(0, 0)
+					c(1, 0)
+				$end 'r3'
+			$end 'TerminalRMatrix'
+			ConvertedFromUnmatchedTerminalMatrices=false
+		$end 'DataPoint'
+	$end 'Frequencies'
+	$begin 'Ports'
+		Port(ModalEntryName='1', TerminalEntryName='1', PortName='1', Mode=1, ModeName='', TerminalName='port1', ParameterName='', MatrixIndex=0)
+		Port(ModalEntryName='2', TerminalEntryName='2', PortName='2', Mode=1, ModeName='', TerminalName='port2', ParameterName='', MatrixIndex=1)
+		Port(ModalEntryName='3', TerminalEntryName='3', PortName='3', Mode=1, ModeName='', TerminalName='port3', ParameterName='', MatrixIndex=2)
+		Port(ModalEntryName='4', TerminalEntryName='4', PortName='4', Mode=1, ModeName='', TerminalName='port4', ParameterName='', MatrixIndex=3)
+	$end 'Ports'
+	$begin 'OtherStateSpaceModels'
+	$end 'OtherStateSpaceModels'
+	HigherOrderMode=false
+	PortNames('1', '2', '3', '4')
+	PortModes(1, 1, 1, 1)
+	PortTerminals('port1', 'port2', 'port3', 'port4')
+	ModalData=true
+	LastSolvedFreq=0
+	PreferredImpedance='Zpi'
+	$begin 'InterpolationBasis'
+		ErrorTolerance=0.005
+		MaxBasisSize=999
+		BasisSize=1
+		LowSampleFreq=396000000
+		LowFullRangeFreq=396000000
+		HighFullRangeFreq=476000000
+		NumSamples=17
+		MaxSubRangeBasisSize=20
+		MinNumSubRanges=1
+		WeightedErrorForUI=1
+		LastBasisFreq=476000000
+		NumRanges=1
+		Ranges(396000000, 476000000, 476000000)
+		FreqSequence(476000000)
+		ExtrapolationType=0
+		ExtrapolationIsConverged=false
+		ExtrapolationFreqCutoff=1500
+		ExtrapFreqSequence()
+	$end 'InterpolationBasis'
+$end 'soln'
+$begin 'freq'
+	ForceSubrangeSplit=false
+	Frequency=396000000
+	DataType='None'
+	$begin 'SMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(-0.0517111630067458, -0.122342361259039)
+			c(0.356862878653736, 0.0687637291152196)
+			c(0.0141931264925796, -0.215851300753219)
+			c(0.35679448628797, 0.0706437707679635)
+		$end 'r0'
+		$begin 'r1'
+			c(0.356862981027841, 0.0687636968041358)
+			c(-0.0513319627005882, -0.118283073672509)
+			c(0.356640815671337, 0.070427573479505)
+			c(0.0147445439108682, -0.216286684774569)
+		$end 'r1'
+		$begin 'r2'
+			c(0.0141931159451291, -0.215851369551839)
+			c(0.356640861328092, 0.0704275817799508)
+			c(-0.0513778222257368, -0.124715320087662)
+			c(0.356615009201677, 0.0723825536820692)
+		$end 'r2'
+		$begin 'r3'
+			c(0.356794414120999, 0.0706438163490206)
+			c(0.0147444887620834, -0.216286573687599)
+			c(0.356614947710428, 0.0723826390421387)
+			c(-0.051443506611974, -0.126870102897371)
+		$end 'r3'
+	$end 'SMatrix'
+	$begin 'Port ABCD'
+		$begin 'AmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'AmI_matrix'
+		$begin 'B_matrix'
+			Rows(0, 1, 2, 3)
+			Cols(0, 1, 2, 3)
+			Values(c(0, -1.47955316753956), c(0, -1.47955316753956), c(0, -1.47955316753956), c(0, -1.47955316753956))
+		$end 'B_matrix'
+		$begin 'C_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'C_matrix'
+		$begin 'DmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'DmI_matrix'
+	$end 'Port ABCD'
+	EnergyError=0
+	IeEnergyError=0
+	$begin 'PortImpedance'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'PortImpedance'
+	$begin 'Gamma'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'Gamma'
+	$begin 'Zpi'
+		n=4
+		$begin 'r0'
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+		$end 'r0'
+	$end 'Zpi'
+	$begin 'Zwave'
+		n=4
+		$begin 'r0'
+			c(49.999999915847, 0)
+			c(49.9999998980128, 0)
+			c(49.9999999188062, 0)
+			c(49.9999999160984, 0)
+		$end 'r0'
+	$end 'Zwave'
+	$begin 'TerminalTMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+		$end 'r3'
+	$end 'TerminalTMatrix'
+	$begin 'TerminalPMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+		$end 'r3'
+	$end 'TerminalPMatrix'
+	$begin 'TerminalRMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+		$end 'r3'
+	$end 'TerminalRMatrix'
+	ConvertedFromUnmatchedTerminalMatrices=false
+$end 'freq'
+$begin 'freq'
+	ForceSubrangeSplit=false
+	Frequency=436000000
+	DataType='None'
+	$begin 'SMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(0.208789035707755, 0.28530051225826)
+			c(0.28104281602984, -0.241562113197563)
+			c(-0.0698877287253394, -0.0345902868821823)
+			c(0.282757453092917, -0.241515552047895)
+		$end 'r0'
+		$begin 'r1'
+			c(0.281042668180659, -0.241562190925908)
+			c(0.206656851758218, 0.291118958774004)
+			c(0.282415787528755, -0.240360600981131)
+			c(-0.0702061736964836, -0.0348462629316276)
+		$end 'r1'
+		$begin 'r2'
+			c(-0.0698877621637887, -0.0345902649332839)
+			c(0.282415937273481, -0.240360580890766)
+			c(0.203427488197461, 0.286834369125176)
+			c(0.284220311525394, -0.240297053762225)
+		$end 'r2'
+		$begin 'r3'
+			c(0.282757282595677, -0.241515644546296)
+			c(-0.0702060084662419, -0.0348463262585277)
+			c(0.284220059675528, -0.240297050651433)
+			c(0.203370783071884, 0.284879268950168)
+		$end 'r3'
+	$end 'SMatrix'
+	$begin 'Port ABCD'
+		$begin 'AmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'AmI_matrix'
+		$begin 'B_matrix'
+			Rows(0, 1, 2, 3)
+			Cols(0, 1, 2, 3)
+			Values(c(0, -1.62900298244255), c(0, -1.62900298244255), c(0, -1.62900298244255), c(0, -1.62900298244255))
+		$end 'B_matrix'
+		$begin 'C_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'C_matrix'
+		$begin 'DmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'DmI_matrix'
+	$end 'Port ABCD'
+	EnergyError=138083.452720374
+	IeEnergyError=0
+	$begin 'PortImpedance'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'PortImpedance'
+	$begin 'Gamma'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'Gamma'
+	$begin 'Zpi'
+		n=4
+		$begin 'r0'
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+		$end 'r0'
+	$end 'Zpi'
+	$begin 'Zwave'
+		n=4
+		$begin 'r0'
+			c(49.9999999162671, 0)
+			c(49.9999999152019, 0)
+			c(49.9999999170305, 0)
+			c(49.9999999160983, 0)
+		$end 'r0'
+	$end 'Zwave'
+	$begin 'TerminalTMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+		$end 'r3'
+	$end 'TerminalTMatrix'
+	$begin 'TerminalPMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+		$end 'r3'
+	$end 'TerminalPMatrix'
+	$begin 'TerminalRMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+		$end 'r3'
+	$end 'TerminalRMatrix'
+	ConvertedFromUnmatchedTerminalMatrices=false
+$end 'freq'
+$begin 'freq'
+	ForceSubrangeSplit=false
+	Frequency=456000000
+	DataType='None'
+	$begin 'SMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(0.396578809976059, 0.315688557276087)
+			c(0.161672822120379, -0.280473163807093)
+			c(-0.0198870341475612, -0.00937607912854374)
+			c(0.162886760270771, -0.281234302091551)
+		$end 'r0'
+		$begin 'r1'
+			c(0.161672698797391, -0.280473277670614)
+			c(0.393605084070413, 0.323256016123098)
+			c(0.163139519796518, -0.279904988305194)
+			c(-0.0201969378350067, -0.00927058232159715)
+		$end 'r1'
+		$begin 'r2'
+			c(-0.0198869983532339, -0.00937613340946063)
+			c(0.163139527460936, -0.279904871809325)
+			c(0.390685039527561, 0.320084239273615)
+			c(0.164437647662476, -0.280681657037778)
+		$end 'r2'
+		$begin 'r3'
+			c(0.162886786597926, -0.281234377632231)
+			c(-0.0201970164544821, -0.00927049862592535)
+			c(0.164437688354659, -0.280681888138039)
+			c(0.391245023507107, 0.31790158766118)
+		$end 'r3'
+	$end 'SMatrix'
+	$begin 'Port ABCD'
+		$begin 'AmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'AmI_matrix'
+		$begin 'B_matrix'
+			Rows(0, 1, 2, 3)
+			Cols(0, 1, 2, 3)
+			Values(c(0, -1.70372788989404), c(0, -1.70372788989404), c(0, -1.70372788989404), c(0, -1.70372788989404))
+		$end 'B_matrix'
+		$begin 'C_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'C_matrix'
+		$begin 'DmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'DmI_matrix'
+	$end 'Port ABCD'
+	EnergyError=0
+	IeEnergyError=0
+	$begin 'PortImpedance'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'PortImpedance'
+	$begin 'Gamma'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'Gamma'
+	$begin 'Zpi'
+		n=4
+		$begin 'r0'
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+		$end 'r0'
+	$end 'Zpi'
+	$begin 'Zwave'
+		n=4
+		$begin 'r0'
+			c(49.9999999157943, 0)
+			c(49.9999999147588, 0)
+			c(49.999999919908, 0)
+			c(49.9999999160986, 0)
+		$end 'r0'
+	$end 'Zwave'
+	$begin 'TerminalTMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+		$end 'r3'
+	$end 'TerminalTMatrix'
+	$begin 'TerminalPMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+		$end 'r3'
+	$end 'TerminalPMatrix'
+	$begin 'TerminalRMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+		$end 'r3'
+	$end 'TerminalRMatrix'
+	ConvertedFromUnmatchedTerminalMatrices=false
+$end 'freq'
+$begin 'freq'
+	ForceSubrangeSplit=false
+	Frequency=416000000
+	DataType='None'
+	$begin 'SMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(0.0217055612897887, 0.129823597133753)
+			c(0.37848330486138, -0.107688859506068)
+			c(-0.085515054740899, -0.127911473182434)
+			c(0.379875407852644, -0.106350842204096)
+		$end 'r0'
+		$begin 'r1'
+			c(0.378483313905813, -0.107688731977107)
+			c(0.0209172114997256, 0.134473802047192)
+			c(0.379199561051557, -0.105912605562125)
+			c(-0.08548343487878, -0.128477819705532)
+		$end 'r1'
+		$begin 'r2'
+			c(-0.0855151779997484, -0.127911414853835)
+			c(0.379199577324336, -0.105912648528775)
+			c(0.0185372280167355, 0.128567640607134)
+			c(0.380667648899915, -0.104522547157595)
+		$end 'r2'
+		$begin 'r3'
+			c(0.379875332157401, -0.106350798603937)
+			c(-0.085483317705586, -0.128477884725653)
+			c(0.380667660978099, -0.104522535338165)
+			c(0.0181746877095448, 0.126370908037469)
+		$end 'r3'
+	$end 'SMatrix'
+	$begin 'Port ABCD'
+		$begin 'AmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'AmI_matrix'
+		$begin 'B_matrix'
+			Rows(0, 1, 2, 3)
+			Cols(0, 1, 2, 3)
+			Values(c(0, -1.55427807499105), c(0, -1.55427807499105), c(0, -1.55427807499105), c(0, -1.55427807499105))
+		$end 'B_matrix'
+		$begin 'C_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'C_matrix'
+		$begin 'DmI_matrix'
+			Rows()
+			Cols()
+			Values()
+		$end 'DmI_matrix'
+	$end 'Port ABCD'
+	EnergyError=0
+	IeEnergyError=0
+	$begin 'PortImpedance'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'PortImpedance'
+	$begin 'Gamma'
+		n=4
+		$begin 'r0'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+	$end 'Gamma'
+	$begin 'Zpi'
+		n=4
+		$begin 'r0'
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+			c(50, 0)
+		$end 'r0'
+	$end 'Zpi'
+	$begin 'Zwave'
+		n=4
+		$begin 'r0'
+			c(49.9999999157475, 0)
+			c(49.9999999181498, 0)
+			c(49.9999999474325, 0)
+			c(49.9999999160978, 0)
+		$end 'r0'
+	$end 'Zwave'
+	$begin 'TerminalTMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(10, 0)
+		$end 'r3'
+	$end 'TerminalTMatrix'
+	$begin 'TerminalPMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(2, 0)
+		$end 'r3'
+	$end 'TerminalPMatrix'
+	$begin 'TerminalRMatrix'
+		m=4
+		n=4
+		$begin 'r0'
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r0'
+		$begin 'r1'
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+			c(0, 0)
+		$end 'r1'
+		$begin 'r2'
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+			c(0, 0)
+		$end 'r2'
+		$begin 'r3'
+			c(0, 0)
+			c(0, 0)
+			c(0, 0)
+			c(1, 0)
+		$end 'r3'
+	$end 'TerminalRMatrix'
+	ConvertedFromUnmatchedTerminalMatrices=false
+$end 'freq'
