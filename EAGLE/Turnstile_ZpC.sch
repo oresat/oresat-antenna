@@ -5353,9 +5353,9 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-PR-SMT25-110?qs=%252BH
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK"/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK"/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="50"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="50"/>
+<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="50"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -6269,6 +6269,19 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-PR-SMT25-110?qs=%252BH
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,3,184.15,147.32,LBAND_0,,,,,"/>
+<approved hash="106,3,184.15,142.24,LBAND_90,,,,,"/>
+<approved hash="106,3,182.88,96.52,LBAND_180,,,,,"/>
+<approved hash="106,3,182.88,91.44,LBAND_270,,,,,"/>
+<approved hash="106,2,138.43,93.98,UHF_0,,,,,"/>
+<approved hash="106,2,156.21,93.98,UHF_90,,,,,"/>
+<approved hash="106,2,173.99,93.98,UHF_180,,,,,"/>
+<approved hash="106,2,193.04,93.98,UHF_270,,,,,"/>
+<approved hash="113,3,139.596,107.846,FRAME1,,,,,"/>
+<approved hash="113,2,139.596,107.846,FRAME2,,,,,"/>
+<approved hash="113,1,139.596,107.846,FRAME3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

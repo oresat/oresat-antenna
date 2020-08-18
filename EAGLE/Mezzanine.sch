@@ -4550,9 +4550,9 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="U$9" library="Mini-Circuits-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
 <part name="U$10" library="Mini-Circuits-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
 <part name="U$11" library="Mini-Circuits-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK"/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK"/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="50"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="50"/>
+<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0402-A-NOSILK" value="50"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -4565,6 +4565,10 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="U$14" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 <part name="U$15" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 <part name="U$16" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4644,6 +4648,18 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="NAME" x="238.76" y="83.82" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="234.95" y="83.82" size="1.778" layer="96" rot="MR90"/>
 </instance>
+<instance part="GND7" gate="1" x="223.52" y="147.32" smashed="yes">
+<attribute name="VALUE" x="220.98" y="144.78" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="223.52" y="124.46" smashed="yes">
+<attribute name="VALUE" x="220.98" y="121.92" size="1.778" layer="96"/>
+</instance>
+<instance part="GND9" gate="1" x="223.52" y="101.6" smashed="yes">
+<attribute name="VALUE" x="220.98" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="GND10" gate="1" x="223.52" y="78.74" smashed="yes">
+<attribute name="VALUE" x="220.98" y="76.2" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4707,6 +4723,26 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="38.1" y1="121.92" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="P$2"/>
+</segment>
+<segment>
+<pinref part="U$13" gate="G$1" pin="P$2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="223.52" y1="149.86" x2="223.52" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="P$2"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="223.52" y1="127" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="P$2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="223.52" y1="104.14" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$16" gate="G$1" pin="P$2"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="223.52" y1="81.28" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
