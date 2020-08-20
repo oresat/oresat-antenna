@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5353,6 +5353,11 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="RF" width="0" drill="0">
+<clearance class="1" value="1"/>
+</class>
+<class number="2" name="New Class" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
@@ -5419,10 +5424,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <plain>
 <text x="10.16" y="81.28" size="2.54" layer="97" rot="R90">Main OreSat Card Connector</text>
 <wire x1="110.49" y1="129.54" x2="113.03" y2="129.54" width="0.1524" layer="97"/>
-<wire x1="113.03" y1="129.54" x2="113.03" y2="111.76" width="0.1524" layer="97"/>
-<wire x1="113.03" y1="111.76" x2="110.49" y2="111.76" width="0.1524" layer="97"/>
-<text x="115.57" y="118.11" size="1.778" layer="97">OreSat Power Domain signals
-(See power sheet)</text>
+<wire x1="113.03" y1="129.54" x2="113.03" y2="104.14" width="0.1524" layer="97"/>
+<wire x1="113.03" y1="104.14" x2="110.49" y2="104.14" width="0.1524" layer="97"/>
+<text x="114.3" y="119.38" size="1.778" layer="97">UNUSED</text>
 <text x="223.52" y="120.65" size="1.778" layer="97">+X</text>
 <text x="196.85" y="120.65" size="1.778" layer="97">+Y</text>
 <text x="251.46" y="120.65" size="1.778" layer="97">-Y</text>
@@ -5638,12 +5642,11 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="66.04" y1="130.81" x2="15.24" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="128.27" x2="66.04" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="128.27" x2="66.04" y2="128.27" width="0.1524" layer="91"/>
-<label x="115.57" y="133.35" size="2.54" layer="95" xref="yes"/>
+<label x="68.58" y="130.81" size="2.54" layer="95"/>
 <pinref part="J6" gate="G$1" pin="9"/>
 <pinref part="J6" gate="G$1" pin="10"/>
 <junction x="66.04" y="130.81"/>
-<wire x1="66.04" y1="130.81" x2="111.76" y2="130.81" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="130.81" x2="156.21" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="130.81" x2="156.21" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="156.21" y1="130.81" x2="156.21" y2="148.59" width="0.1524" layer="91"/>
 <pinref part="R5" gate="R" pin="2"/>
 <wire x1="156.21" y1="148.59" x2="167.64" y2="148.59" width="0.1524" layer="91"/>
@@ -5652,9 +5655,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="R4" gate="R" pin="2"/>
 <wire x1="167.64" y1="143.51" x2="167.64" y2="148.59" width="0.1524" layer="91"/>
 <junction x="167.64" y="148.59"/>
-<wire x1="111.76" y1="130.81" x2="111.76" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="133.35" x2="115.57" y2="133.35" width="0.1524" layer="91"/>
-<junction x="111.76" y="130.81"/>
 </segment>
 </net>
 <net name="MAG-SCL" class="0">
@@ -5753,7 +5753,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="J6" gate="G$1" pin="25"/>
 <wire x1="15.24" y1="90.17" x2="66.04" y2="90.17" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="87.63" x2="66.04" y2="90.17" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="95.25" x2="66.04" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="95.25" x2="66.04" y2="95.25" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="90.17" x2="66.04" y2="92.71" width="0.1524" layer="91"/>
 <junction x="66.04" y="90.17"/>
 <pinref part="J6" gate="G$1" pin="21"/>
@@ -5774,8 +5774,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="252.73" y1="107.95" x2="223.52" y2="107.95" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="107.95" x2="196.85" y2="107.95" width="0.1524" layer="91"/>
 <wire x1="196.85" y1="107.95" x2="168.91" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="107.95" x2="95.25" y2="107.95" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="107.95" x2="95.25" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="168.91" y1="107.95" x2="128.27" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="107.95" x2="128.27" y2="95.25" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
 <junction x="168.91" y="107.95"/>
 <pinref part="J2" gate="G$1" pin="VBUS"/>
@@ -5932,7 +5932,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="93.98" y1="40.64" x2="143.51" y2="40.64" width="0.1524" layer="94"/>
 <wire x1="143.51" y1="40.64" x2="143.51" y2="156.21" width="0.1524" layer="94"/>
 <wire x1="143.51" y1="156.21" x2="93.98" y2="156.21" width="0.1524" layer="94"/>
-<text x="99.06" y="144.78" size="3.81" layer="94">MEZZANINE</text>
+<text x="104.14" y="138.43" size="3.81" layer="97">MEZZANINE
+PCB</text>
 <wire x1="191.77" y1="157.48" x2="191.77" y2="161.29" width="0.1524" layer="94"/>
 <wire x1="191.77" y1="161.29" x2="187.96" y2="166.37" width="0.1524" layer="94"/>
 <wire x1="187.96" y1="166.37" x2="191.77" y2="166.37" width="0.1524" layer="94"/>
@@ -5957,6 +5958,13 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="234.95" y1="166.37" x2="238.76" y2="166.37" width="0.1524" layer="94"/>
 <wire x1="238.76" y1="166.37" x2="234.95" y2="161.29" width="0.1524" layer="94"/>
 <wire x1="234.95" y1="161.29" x2="234.95" y2="166.37" width="0.1524" layer="94"/>
+<text x="193.04" y="26.67" size="5.08" layer="94">UHF Feed System</text>
+<wire x1="171.45" y1="182.88" x2="171.45" y2="146.05" width="0.1524" layer="97"/>
+<wire x1="171.45" y1="146.05" x2="256.54" y2="146.05" width="0.1524" layer="97"/>
+<wire x1="256.54" y1="146.05" x2="256.54" y2="182.88" width="0.1524" layer="97"/>
+<wire x1="256.54" y1="182.88" x2="171.45" y2="182.88" width="0.1524" layer="97"/>
+<text x="199.39" y="175.26" size="2.54" layer="97">4x UHF elements
+(through holes)</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -6038,7 +6046,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="151.13" y1="100.33" x2="151.13" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UHF_0" class="0">
+<net name="UHF_0" class="1">
 <segment>
 <label x="234.95" y="154.94" size="1.778" layer="95"/>
 <wire x1="153.67" y1="57.15" x2="234.95" y2="57.15" width="0.1524" layer="91"/>
@@ -6046,7 +6054,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="U$8" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="UHF_90" class="0">
+<net name="UHF_90" class="1">
 <segment>
 <label x="219.71" y="154.94" size="1.778" layer="95"/>
 <wire x1="153.67" y1="86.36" x2="219.71" y2="86.36" width="0.1524" layer="91"/>
@@ -6054,7 +6062,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="U$7" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="UHF_270" class="0">
+<net name="UHF_270" class="1">
 <segment>
 <label x="191.77" y="154.94" size="1.778" layer="95"/>
 <wire x1="153.67" y1="142.24" x2="191.77" y2="142.24" width="0.1524" layer="91"/>
@@ -6062,7 +6070,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="U$5" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="UHF_180" class="0">
+<net name="UHF_180" class="1">
 <segment>
 <label x="205.74" y="154.94" size="1.778" layer="95"/>
 <wire x1="153.67" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
@@ -6070,7 +6078,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="U$6" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="N$12" class="1">
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <pinref part="CM2" gate="G$1" pin="CENTER"/>
@@ -6107,6 +6115,13 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="237.49" y1="135.89" x2="240.03" y2="135.89" width="0.1524" layer="94"/>
 <wire x1="240.03" y1="135.89" x2="237.49" y2="132.08" width="0.1524" layer="94"/>
 <wire x1="237.49" y1="132.08" x2="237.49" y2="135.89" width="0.1524" layer="94"/>
+<text x="194.31" y="26.67" size="5.08" layer="94">L Band Feed System</text>
+<wire x1="212.09" y1="165.1" x2="212.09" y2="128.27" width="0.1524" layer="97"/>
+<wire x1="212.09" y1="128.27" x2="245.11" y2="128.27" width="0.1524" layer="97"/>
+<wire x1="245.11" y1="128.27" x2="245.11" y2="165.1" width="0.1524" layer="97"/>
+<wire x1="245.11" y1="165.1" x2="212.09" y2="165.1" width="0.1524" layer="97"/>
+<text x="214.63" y="156.21" size="2.54" layer="97">4x UHF elements
+(through holes)</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -6168,14 +6183,14 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="N$1" class="1">
 <segment>
 <wire x1="43.18" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="CM1" gate="G$1" pin="CENTER"/>
 <pinref part="U$1" gate="G$1" pin="SUM"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$2" class="1">
 <segment>
 <wire x1="104.14" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="129.54" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
@@ -6247,7 +6262,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="R2" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$5" class="1">
 <segment>
 <wire x1="139.7" y1="96.52" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
@@ -6274,7 +6289,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="R3" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="LBAND_270" class="0">
+<net name="LBAND_270" class="1">
 <segment>
 <label x="238.76" y="138.43" size="1.778" layer="95" rot="R90"/>
 <pinref part="U$2" gate="G$1" pin="90"/>
@@ -6282,7 +6297,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="237.49" y1="91.44" x2="237.49" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LBAND_180" class="0">
+<net name="LBAND_180" class="1">
 <segment>
 <label x="232.41" y="138.43" size="1.778" layer="95" rot="R90"/>
 <pinref part="U$2" gate="G$1" pin="0"/>
@@ -6290,7 +6305,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="231.14" y1="96.52" x2="231.14" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LBAND_90" class="0">
+<net name="LBAND_90" class="1">
 <segment>
 <wire x1="184.15" y1="142.24" x2="201.93" y2="142.24" width="0.1524" layer="91"/>
 <label x="226.06" y="138.43" size="1.778" layer="95" rot="R90"/>
@@ -6300,7 +6315,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="224.79" y1="114.3" x2="224.79" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LBAND_0" class="0">
+<net name="LBAND_0" class="1">
 <segment>
 <wire x1="184.15" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <label x="219.71" y="138.43" size="1.778" layer="95" rot="R90"/>
@@ -6316,6 +6331,12 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <errors>
 <approved hash="106,3,184.15,147.32,LBAND_0,,,,,"/>
 <approved hash="106,3,184.15,142.24,LBAND_90,,,,,"/>
+<approved hash="106,3,185.42,96.52,LBAND_180,,,,,"/>
+<approved hash="106,3,185.42,91.44,LBAND_270,,,,,"/>
+<approved hash="106,2,153.67,57.15,UHF_0,,,,,"/>
+<approved hash="106,2,153.67,86.36,UHF_90,,,,,"/>
+<approved hash="106,2,153.67,114.3,UHF_180,,,,,"/>
+<approved hash="106,2,153.67,142.24,UHF_270,,,,,"/>
 <approved hash="113,3,139.596,107.846,FRAME1,,,,,"/>
 <approved hash="113,2,139.596,107.846,FRAME2,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME3,,,,,"/>
