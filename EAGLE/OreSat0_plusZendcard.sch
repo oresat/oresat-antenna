@@ -5396,9 +5396,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK"/>
-<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK"/>
-<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK"/>
+<part name="R1" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="50"/>
+<part name="R2" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="50"/>
+<part name="R3" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="50"/>
 <part name="R4" library="oresat-rcl" deviceset="R-US_" device="0309/12" value="HOT"/>
 <part name="R5" library="oresat-rcl" deviceset="R-US_" device="0309/12" value="WARMISH"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -5980,17 +5980,17 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <instance part="U$6" gate="G$1" x="148.59" y="111.76" smashed="yes"/>
 <instance part="U$7" gate="G$1" x="148.59" y="83.82" smashed="yes"/>
 <instance part="U$8" gate="G$1" x="148.59" y="54.61" smashed="yes"/>
-<instance part="GND8" gate="1" x="151.13" y="128.27" smashed="yes">
-<attribute name="VALUE" x="148.59" y="125.73" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="151.13" y="125.73" smashed="yes">
+<attribute name="VALUE" x="148.59" y="123.19" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="151.13" y="100.33" smashed="yes">
-<attribute name="VALUE" x="148.59" y="97.79" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="151.13" y="97.79" smashed="yes">
+<attribute name="VALUE" x="148.59" y="95.25" size="1.778" layer="96"/>
 </instance>
-<instance part="GND10" gate="1" x="151.13" y="71.12" smashed="yes">
-<attribute name="VALUE" x="148.59" y="68.58" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="151.13" y="69.85" smashed="yes">
+<attribute name="VALUE" x="148.59" y="67.31" size="1.778" layer="96"/>
 </instance>
-<instance part="GND11" gate="1" x="151.13" y="41.91" smashed="yes">
-<attribute name="VALUE" x="148.59" y="39.37" size="1.778" layer="96"/>
+<instance part="GND11" gate="1" x="151.13" y="40.64" smashed="yes">
+<attribute name="VALUE" x="148.59" y="38.1" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6020,10 +6020,22 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <segment>
 <pinref part="U$7" gate="G$1" pin="P$2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="151.13" y1="72.39" x2="151.13" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="P$2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="151.13" y1="43.18" x2="151.13" y2="44.45" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="151.13" y1="128.27" x2="151.13" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="P$2"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="151.13" y1="100.33" x2="151.13" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UHF_0" class="0">
@@ -6304,12 +6316,6 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <errors>
 <approved hash="106,3,184.15,147.32,LBAND_0,,,,,"/>
 <approved hash="106,3,184.15,142.24,LBAND_90,,,,,"/>
-<approved hash="106,3,182.88,96.52,LBAND_180,,,,,"/>
-<approved hash="106,3,182.88,91.44,LBAND_270,,,,,"/>
-<approved hash="106,2,138.43,93.98,UHF_0,,,,,"/>
-<approved hash="106,2,156.21,93.98,UHF_90,,,,,"/>
-<approved hash="106,2,173.99,93.98,UHF_180,,,,,"/>
-<approved hash="106,2,193.04,93.98,UHF_270,,,,,"/>
 <approved hash="113,3,139.596,107.846,FRAME1,,,,,"/>
 <approved hash="113,2,139.596,107.846,FRAME2,,,,,"/>
 <approved hash="113,1,139.596,107.846,FRAME3,,,,,"/>

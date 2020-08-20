@@ -2959,17 +2959,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="CF1" library="J-Harwin-M55-60X1242R-12pin-1.27mm-F-vertical" package="HARWIN-M55-60X1242R" value="J-HARWIN-M55-60X1242R" x="7.4" y="78.8" locked="yes" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.4" y="85.785" locked="yes" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="R1" library="oresat-rcl" package=".0805-B-NOSILK" value="" x="64.1" y="47.15" smashed="yes" rot="MR180">
+<element name="R1" library="oresat-rcl" package=".0805-B-NOSILK" value="50" x="64.1" y="47.15" smashed="yes" rot="MR180">
 <attribute name="NAME" x="62.6" y="46.15" size="0.8" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="NAME" x="64.1" y="47.15" size="0.4" layer="34" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="62.6" y="48.95" size="0.8" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="R2" library="oresat-rcl" package=".0805-B-NOSILK" value="" x="61.1" y="44.8" smashed="yes" rot="MR0">
+<element name="R2" library="oresat-rcl" package=".0805-B-NOSILK" value="50" x="61.1" y="44.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="62.6" y="45.8" size="0.8" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="NAME" x="61.1" y="44.8" size="0.4" layer="34" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="62.6" y="43" size="0.8" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="R3" library="oresat-rcl" package=".0805-B-NOSILK" value="" x="38.2" y="55" smashed="yes" rot="MR180">
+<element name="R3" library="oresat-rcl" package=".0805-B-NOSILK" value="50" x="38.2" y="55" smashed="yes" rot="MR180">
 <attribute name="NAME" x="36.7" y="54" size="0.8" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="NAME" x="38.2" y="55" size="0.4" layer="34" ratio="15" rot="MR180" align="center"/>
 <attribute name="VALUE" x="36.7" y="56.8" size="0.8" layer="28" font="vector" ratio="15" rot="MR180"/>
@@ -3411,6 +3411,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="88" y="79" extent="1-16" drill="0.254"/>
 <via x="80.5" y="76.8" extent="1-16" drill="0.254"/>
 <via x="76.7" y="74.7" extent="1-16" drill="0.254"/>
+<contactref element="U$5" pad="P$2"/>
+<contactref element="U$5" pad="P$3"/>
+<contactref element="U$6" pad="P$2"/>
+<contactref element="U$6" pad="P$3"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$3" pad="P$3"/>
@@ -3901,7 +3905,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="4,1,cfe93ad78017c67c"/>
 <approved hash="4,1,a622f049768c7b74"/>
 <approved hash="4,1,62f149687c521c6b"/>
-<approved hash="4,1,466feee0d39a745f"/>
 <approved hash="4,1,3615f58de851648f"/>
 <approved hash="4,1,e0bf3e94969c7940"/>
 <approved hash="4,1,094654cadc66b26c"/>
@@ -3923,7 +3926,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="4,1,a218c336ac9b721a"/>
 <approved hash="4,1,3bd22315370d153e"/>
 <approved hash="4,1,631a30ad18c1b0ea"/>
-<approved hash="4,1,a6341313e62a39e7"/>
 <approved hash="4,1,462470a4d26cc773"/>
 <approved hash="4,1,7602494678303881"/>
 <approved hash="4,1,6e5f9d5d20d43fb6"/>
