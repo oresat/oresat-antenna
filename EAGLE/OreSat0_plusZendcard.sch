@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5356,7 +5356,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <class number="1" name="RF" width="0" drill="0">
 <clearance class="1" value="1"/>
 </class>
-<class number="2" name="New Class" width="0" drill="0">
+<class number="2" name="SHUTDOWN" width="0" drill="0">
+<clearance class="2" value="0.3"/>
 </class>
 </classes>
 <parts>
@@ -5720,7 +5721,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <label x="166.37" y="180.34" size="2.54" layer="95"/>
 </segment>
 </net>
-<net name="!SD" class="0">
+<net name="!SD" class="2">
 <segment>
 <pinref part="J6" gate="G$1" pin="39"/>
 <wire x1="66.04" y1="54.61" x2="15.24" y2="54.61" width="0.1524" layer="91"/>
