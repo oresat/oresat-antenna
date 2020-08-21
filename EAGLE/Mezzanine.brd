@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -24,15 +24,15 @@
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -98,29 +98,23 @@
 </layers>
 <board>
 <plain>
-<circle x="49.9" y="75" radius="1.2" width="0.001" layer="20"/>
-<circle x="24.8" y="49.9" radius="1.2" width="0.001" layer="20"/>
-<circle x="49.9" y="24.8" radius="1.2" width="0.001" layer="20"/>
-<circle x="75" y="49.9" radius="1.2" width="0.001" layer="20"/>
 <wire x1="55.75" y1="59.015" x2="55.75" y2="59.01" width="1.58" layer="29"/>
-<circle x="49.9" y="24.8" radius="3" width="6" layer="39"/>
-<circle x="24.8" y="49.9" radius="3" width="6" layer="39"/>
-<circle x="49.9" y="75" radius="3" width="6" layer="39"/>
-<circle x="75" y="49.9" radius="3" width="6" layer="39"/>
-<wire x1="21.4142125" y1="83" x2="93" y2="83" width="0.38" layer="20"/>
-<wire x1="93" y1="83" x2="94" y2="82" width="0.38" layer="20" curve="-90"/>
-<wire x1="94" y1="82" x2="94" y2="19.4142125" width="0.38" layer="20"/>
-<wire x1="94" y1="19.4142125" x2="93.70710625" y2="18.70710625" width="0.38" layer="20" curve="-45"/>
-<wire x1="93.70710625" y1="18.70710625" x2="82.29289375" y2="7.29289375" width="0.38" layer="20"/>
-<wire x1="82.29289375" y1="7.29289375" x2="81.5857875" y2="7" width="0.38" layer="20" curve="-45"/>
-<wire x1="81.5857875" y1="7" x2="21.4142125" y2="7" width="0.38" layer="20"/>
-<wire x1="21.4142125" y1="7" x2="20.70710625" y2="7.29289375" width="0.38" layer="20" curve="-45"/>
-<wire x1="20.70710625" y1="7.29289375" x2="9.29289375" y2="18.70710625" width="0.38" layer="20"/>
-<wire x1="9.29289375" y1="18.70710625" x2="9" y2="19.4142125" width="0.38" layer="20" curve="-45"/>
-<wire x1="9" y1="19.4142125" x2="9" y2="70.5857875" width="0.38" layer="20"/>
-<wire x1="9" y1="70.5857875" x2="9.29289375" y2="71.29289375" width="0.38" layer="20" curve="-45"/>
-<wire x1="9.29289375" y1="71.29289375" x2="20.70710625" y2="82.70710625" width="0.38" layer="20"/>
-<wire x1="20.70710625" y1="82.70710625" x2="21.4142125" y2="83" width="0.38" layer="20" curve="-45"/>
+<wire x1="28.20710625" y1="83" x2="90.79289375" y2="83" width="0.001" layer="20"/>
+<wire x1="90.79289375" y1="83" x2="91.146446875" y2="82.853553125" width="0.001" layer="20" curve="-45"/>
+<wire x1="91.146446875" y1="82.853553125" x2="93.853553125" y2="80.146446875" width="0.001" layer="20"/>
+<wire x1="93.853553125" y1="80.146446875" x2="94" y2="79.79289375" width="0.001" layer="20" curve="-45"/>
+<wire x1="94" y1="79.79289375" x2="94" y2="23.20710625" width="0.001" layer="20"/>
+<wire x1="94" y1="23.20710625" x2="93.853553125" y2="22.853553125" width="0.001" layer="20" curve="-45"/>
+<wire x1="93.853553125" y1="22.853553125" x2="80.146446875" y2="9.146446875" width="0.001" layer="20"/>
+<wire x1="80.146446875" y1="9.146446875" x2="79.79289375" y2="9" width="0.001" layer="20" curve="-45"/>
+<wire x1="79.79289375" y1="9" x2="19.20710625" y2="9" width="0.001" layer="20"/>
+<wire x1="19.20710625" y1="9" x2="18.853553125" y2="9.146446875" width="0.001" layer="20" curve="-45"/>
+<wire x1="18.853553125" y1="9.146446875" x2="11.146384375" y2="16.853615625" width="0.001" layer="20"/>
+<wire x1="11.146384375" y1="16.853615625" x2="10.9999375" y2="17.20543125" width="0.001" layer="20" curve="-44.800898"/>
+<wire x1="10.9999375" y1="17.20543125" x2="10.985159375" y2="65.779665625" width="0.001" layer="20"/>
+<wire x1="10.985159375" y1="65.779665625" x2="11.13160625" y2="66.13160625" width="0.001" layer="20" curve="-44.874123"/>
+<wire x1="11.13160625" y1="66.13160625" x2="27.853553125" y2="82.853553125" width="0.001" layer="20"/>
+<wire x1="27.853553125" y1="82.853553125" x2="28.20710625" y2="83" width="0.001" layer="20" curve="-45"/>
 <wire x1="84.6" y1="75.7" x2="83" y2="73" width="2" layer="29" curve="70"/>
 <wire x1="83" y1="73" x2="83" y2="67.242640625" width="2" layer="29"/>
 <wire x1="83" y1="67.242640625" x2="83.878678125" y2="65.121321875" width="2" layer="29" curve="44.999958"/>
@@ -154,6 +148,26 @@
 <wire x1="44.36" y1="34.815" x2="41.028203125" y2="34.815" width="2" layer="29"/>
 <wire x1="41.028203125" y1="34.815" x2="30.421603125" y2="30.421603125" width="2" layer="29" curve="44.999992"/>
 <wire x1="30.421603125" y1="30.421603125" x2="28.70710625" y2="28.70710625" width="2" layer="29"/>
+<hole x="24.8" y="49.9" drill="2.4" locked="yes"/>
+<hole x="75" y="49.9" drill="2.4" locked="yes"/>
+<hole x="49.9" y="75" drill="3.1" locked="yes"/>
+<hole x="49.9" y="24.8" drill="3.1" locked="yes"/>
+<circle x="49.9" y="24.8" radius="3" width="0" layer="41"/>
+<circle x="49.9" y="24.8" radius="3" width="0" layer="42"/>
+<circle x="49.9" y="75" radius="3" width="0" layer="41"/>
+<circle x="49.9" y="75" radius="3" width="0" layer="42"/>
+<circle x="49.9" y="24.8" radius="3" width="0" layer="30"/>
+<circle x="49.9" y="24.8" radius="3" width="0" layer="29"/>
+<circle x="49.9" y="75" radius="3" width="0" layer="29"/>
+<circle x="49.9" y="75" radius="3" width="0" layer="30"/>
+<circle x="24.8" y="49.9" radius="2.5" width="0" layer="29"/>
+<circle x="24.8" y="49.9" radius="3" width="0" layer="30"/>
+<circle x="24.8" y="49.9" radius="2.5" width="0" layer="41"/>
+<circle x="24.8" y="49.9" radius="3" width="0" layer="42"/>
+<circle x="75" y="49.9" radius="2.5" width="0" layer="41"/>
+<circle x="75" y="49.9" radius="3" width="0" layer="42"/>
+<circle x="75" y="49.9" radius="2.5" width="0" layer="29"/>
+<circle x="75" y="49.9" radius="3" width="0" layer="30"/>
 </plain>
 <libraries>
 <library name="oresat-rcl">
@@ -1534,20 +1548,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U$5" pad="P$3"/>
 <contactref element="U$5" pad="P$2"/>
 <polygon width="0.38" layer="1" isolate="0.2" thermals="no" rank="6">
-<vertex x="9" y="70.5857875"/>
-<vertex x="9" y="19.4142125" curve="45"/>
-<vertex x="9.29289375" y="18.70710625"/>
-<vertex x="20.70710625" y="7.29289375" curve="45"/>
-<vertex x="21.4142125" y="7"/>
-<vertex x="81.5857875" y="7" curve="45"/>
-<vertex x="82.29289375" y="7.29289375"/>
-<vertex x="93.70710625" y="18.70710625" curve="45"/>
-<vertex x="94" y="19.4142125"/>
-<vertex x="94" y="82" curve="90"/>
-<vertex x="93" y="83"/>
-<vertex x="21.4142125" y="83" curve="45"/>
-<vertex x="20.70710625" y="82.70710625"/>
-<vertex x="9.29289375" y="71.29289375" curve="45"/>
+<vertex x="11" y="66"/>
+<vertex x="11" y="17"/>
+<vertex x="19" y="9"/>
+<vertex x="80" y="9"/>
+<vertex x="94" y="23"/>
+<vertex x="94" y="80"/>
+<vertex x="91" y="83"/>
+<vertex x="28" y="83"/>
 </polygon>
 <via x="85" y="74" extent="1-16" drill="0.254"/>
 <via x="84.5" y="70.9" extent="1-16" drill="0.254"/>
@@ -1672,7 +1680,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="51.62" y="46.92" extent="1-16" drill="0.254"/>
 <via x="53.32" y="45.22" extent="1-16" drill="0.254"/>
 <via x="53.92" y="42.92" extent="1-16" drill="0.254"/>
-<via x="53.52" y="37.82" extent="1-16" drill="0.254"/>
+<via x="53.2" y="37.8" extent="1-16" drill="0.254"/>
 <via x="54.22" y="40.42" extent="1-16" drill="0.254"/>
 <via x="55.22" y="36.32" extent="1-16" drill="0.254"/>
 <via x="55.22" y="33.32" extent="1-16" drill="0.254"/>
@@ -1690,52 +1698,34 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="70.32" y="31.62" extent="1-16" drill="0.254"/>
 <via x="71.92" y="30.02" extent="1-16" drill="0.254"/>
 <polygon width="0.38" layer="2" isolate="0.2" thermals="no" rank="6">
-<vertex x="9" y="70.5857875"/>
-<vertex x="9" y="19.4142125" curve="45"/>
-<vertex x="9.29289375" y="18.70710625"/>
-<vertex x="20.70710625" y="7.29289375" curve="45"/>
-<vertex x="21.4142125" y="7"/>
-<vertex x="81.5857875" y="7" curve="45"/>
-<vertex x="82.29289375" y="7.29289375"/>
-<vertex x="93.70710625" y="18.70710625" curve="45"/>
-<vertex x="94" y="19.4142125"/>
-<vertex x="94" y="82" curve="90"/>
-<vertex x="93" y="83"/>
-<vertex x="21.4142125" y="83" curve="45"/>
-<vertex x="20.70710625" y="82.70710625"/>
-<vertex x="9.29289375" y="71.29289375" curve="45"/>
+<vertex x="11" y="66"/>
+<vertex x="11" y="17"/>
+<vertex x="19" y="9"/>
+<vertex x="80" y="9"/>
+<vertex x="94" y="23"/>
+<vertex x="94" y="80"/>
+<vertex x="91" y="83"/>
+<vertex x="28" y="83"/>
 </polygon>
 <polygon width="0.38" layer="15" isolate="0.2" thermals="no" rank="6">
-<vertex x="9" y="70.5857875"/>
-<vertex x="9" y="19.4142125" curve="45"/>
-<vertex x="9.29289375" y="18.70710625"/>
-<vertex x="20.70710625" y="7.29289375" curve="45"/>
-<vertex x="21.4142125" y="7"/>
-<vertex x="81.5857875" y="7" curve="45"/>
-<vertex x="82.29289375" y="7.29289375"/>
-<vertex x="93.70710625" y="18.70710625" curve="45"/>
-<vertex x="94" y="19.4142125"/>
-<vertex x="94" y="82" curve="90"/>
-<vertex x="93" y="83"/>
-<vertex x="21.4142125" y="83" curve="45"/>
-<vertex x="20.70710625" y="82.70710625"/>
-<vertex x="9.29289375" y="71.29289375" curve="45"/>
+<vertex x="11" y="66"/>
+<vertex x="11" y="17"/>
+<vertex x="19" y="9"/>
+<vertex x="80" y="9"/>
+<vertex x="94" y="23"/>
+<vertex x="94" y="80"/>
+<vertex x="91" y="83"/>
+<vertex x="28" y="83"/>
 </polygon>
 <polygon width="0.38" layer="16" isolate="0.2" thermals="no" rank="6">
-<vertex x="9" y="70.5857875"/>
-<vertex x="9" y="19.4142125" curve="45"/>
-<vertex x="9.29289375" y="18.70710625"/>
-<vertex x="20.70710625" y="7.29289375" curve="45"/>
-<vertex x="21.4142125" y="7"/>
-<vertex x="81.5857875" y="7" curve="45"/>
-<vertex x="82.29289375" y="7.29289375"/>
-<vertex x="93.70710625" y="18.70710625" curve="45"/>
-<vertex x="94" y="19.4142125"/>
-<vertex x="94" y="82" curve="90"/>
-<vertex x="93" y="83"/>
-<vertex x="21.4142125" y="83" curve="45"/>
-<vertex x="20.70710625" y="82.70710625"/>
-<vertex x="9.29289375" y="71.29289375" curve="45"/>
+<vertex x="11" y="66"/>
+<vertex x="11" y="17"/>
+<vertex x="19" y="9"/>
+<vertex x="80" y="9"/>
+<vertex x="94" y="23"/>
+<vertex x="94" y="80"/>
+<vertex x="91" y="83"/>
+<vertex x="28" y="83"/>
 </polygon>
 <via x="84.9" y="43.4" extent="1-16" drill="0.254"/>
 <via x="81.9" y="43.7" extent="1-16" drill="0.254"/>
@@ -1769,12 +1759,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="49.9" y="54.2" extent="1-16" drill="0.254"/>
 <via x="48.82" y="55.98" extent="1-16" drill="0.254"/>
 <via x="45.84" y="55.62" extent="1-16" drill="0.254"/>
-<via x="46.42" y="37.96" extent="1-16" drill="0.254"/>
-<via x="48.54" y="37.96" extent="1-16" drill="0.254"/>
-<via x="50.66" y="37.96" extent="1-16" drill="0.254"/>
+<via x="46.6" y="37.8" extent="1-16" drill="0.254"/>
+<via x="48.7" y="37.8" extent="1-16" drill="0.254"/>
+<via x="51" y="37.8" extent="1-16" drill="0.254"/>
 <via x="87.28" y="49.9" extent="1-16" drill="0.254"/>
 <via x="85.16" y="49.9" extent="1-16" drill="0.254"/>
-<via x="83.04" y="49.9" extent="1-16" drill="0.254"/>
+<via x="82.64" y="49.9" extent="1-16" drill="0.254"/>
 <via x="44.58" y="63.48" extent="1-16" drill="0.254"/>
 <via x="44.58" y="66.48" extent="1-16" drill="0.254"/>
 <via x="41.58" y="66.48" extent="1-16" drill="0.254"/>
@@ -1790,9 +1780,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="30.08" y="71.88" extent="1-16" drill="0.254"/>
 <via x="29.48" y="68.18" extent="1-16" drill="0.254"/>
 <via x="27.88" y="69.78" extent="1-16" drill="0.254"/>
-<via x="15" y="70" extent="1-16" drill="0.254"/>
-<via x="20" y="75" extent="1-16" drill="0.254"/>
-<via x="25" y="80" extent="1-16" drill="0.254"/>
+<via x="15" y="68" extent="1-16" drill="0.254"/>
+<via x="21" y="74" extent="1-16" drill="0.254"/>
+<via x="27" y="80" extent="1-16" drill="0.254"/>
 <via x="35" y="80" extent="1-16" drill="0.254"/>
 <via x="45" y="80" extent="1-16" drill="0.254"/>
 <via x="55" y="80" extent="1-16" drill="0.254"/>
@@ -1877,10 +1867,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="69.72" y="71.88" extent="1-16" drill="0.254"/>
 <via x="70.32" y="68.18" extent="1-16" drill="0.254"/>
 <via x="71.92" y="69.78" extent="1-16" drill="0.254"/>
-<via x="53.5" y="61.98" extent="1-16" drill="0.254"/>
-<via x="51.38" y="61.98" extent="1-16" drill="0.254"/>
-<via x="49.26" y="61.98" extent="1-16" drill="0.254"/>
-<via x="46.4" y="62" extent="1-16" drill="0.254"/>
+<via x="53.2" y="62" extent="1-16" drill="0.254"/>
+<via x="50.98" y="61.98" extent="1-16" drill="0.254"/>
+<via x="48.8" y="62" extent="1-16" drill="0.254"/>
+<via x="46.6" y="62" extent="1-16" drill="0.254"/>
 <via x="44.58" y="36.32" extent="1-16" drill="0.254"/>
 <via x="44.58" y="33.32" extent="1-16" drill="0.254"/>
 <via x="41.58" y="33.32" extent="1-16" drill="0.254"/>
@@ -2042,14 +2032,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,1,8c79eaead66f6ac5"/>
 <approved hash="5,1,c60ff5afce9988bd"/>
 <approved hash="5,1,34b0e510ca75295b"/>
-<approved hash="19,1,c937f2f922392cc3"/>
 <approved hash="19,1,50cd51fad9f2d8c5"/>
 <approved hash="19,1,1cf11dfa4df24cf9"/>
-<approved hash="19,1,eccdefe0d3e8d0c5"/>
-<approved hash="19,1,2ccf2fe353eb50c7"/>
-<approved hash="19,1,e4c1e7e6c3eec0c9"/>
-<approved hash="19,1,24c827e443ec40c0"/>
+<approved hash="5,1,adea9649fa04c8a8"/>
+<approved hash="19,1,497a54b95cb14172"/>
+<approved hash="19,1,74c277edd3e5d0ca"/>
+<approved hash="19,1,2d402294429c4d48"/>
+<approved hash="19,1,5b4f5494409c4f47"/>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.5" severity="warning">
+Since Version 8.5, EAGLE supports locking for holes, vias, wires and polygons. 
+The locking property on all objects of these types will not be understood in this version. 
+</note>
+</compatibility>
 </eagle>
