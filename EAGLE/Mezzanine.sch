@@ -4477,53 +4477,54 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </deviceset>
 </devicesets>
 </library>
-<library name="J-HRS-U.FL-R-SMT-1(10)-M-RF">
+<library name="J-Radiall-R107064070-RF">
 <packages>
-<package name="U.FL-R-SMT">
-<smd name="P$1" x="0" y="1.525" dx="1" dy="1.05" layer="1" rot="R180" stop="no" thermals="no" cream="no"/>
-<smd name="P$2" x="-1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="P$3" x="1.475" y="0" dx="2.2" dy="1.05" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
-<rectangle x1="-0.4" y1="1.1" x2="0.4" y2="1.95" layer="31"/>
-<rectangle x1="-1.95" y1="-1" x2="-1.05" y2="1" layer="31"/>
-<rectangle x1="1.05" y1="-1" x2="1.95" y2="1" layer="31"/>
-<polygon width="2" layer="29">
-<vertex x="-2" y="2"/>
-<vertex x="2" y="2"/>
-<vertex x="2" y="-2"/>
-<vertex x="-2" y="-2"/>
-</polygon>
-<text x="-2" y="-4" size="0.655" layer="25" font="vector" ratio="20" rot="R270">&gt;NAME</text>
-<text x="1" y="-4" size="0.655" layer="27" font="vector" ratio="20" rot="R270">&gt;VALUE</text>
+<package name="R107064070">
+<smd name="P$1" x="0" y="-1" dx="1.2" dy="1.4" layer="1" thermals="no" cream="no"/>
+<smd name="P$2" x="-1.9" y="0" dx="1.2" dy="1.1" layer="1" rot="R90" thermals="no" cream="no"/>
+<smd name="P$3" x="1.9" y="0" dx="1.2" dy="1.1" layer="1" rot="R90" thermals="no" cream="no"/>
+<rectangle x1="-1.35" y1="-0.3" x2="1.35" y2="0.6" layer="41"/>
+<rectangle x1="-1.35" y1="-1.25" x2="-0.6" y2="-0.3" layer="41"/>
+<rectangle x1="-0.8" y1="-2.1" x2="-0.6" y2="-1.25" layer="41"/>
+<rectangle x1="0.6" y1="-1.25" x2="1.35" y2="-0.3" layer="41"/>
+<rectangle x1="0.6" y1="-2.1" x2="0.8" y2="-1.25" layer="41"/>
+<rectangle x1="-2.3" y1="-0.45" x2="-1.5" y2="0.45" layer="31"/>
+<rectangle x1="-0.45" y1="-1.55" x2="0.45" y2="-0.45" layer="31"/>
+<rectangle x1="1.5" y1="-0.45" x2="2.3" y2="0.45" layer="31"/>
 </package>
 </packages>
 <symbols>
-<symbol name="U.FL-R-SMT">
-<pin name="P$1" x="0" y="-5.08" visible="off" length="middle" rot="R90"/>
-<pin name="P$2" x="-5.08" y="-5.08" visible="off" length="middle" rot="R90"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="4.318" width="0.381" layer="94"/>
-<wire x1="-5.08" y1="4.318" x2="-0.762" y2="0" width="0.381" layer="94" curve="90"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="4.318" width="0.381" layer="94"/>
-<wire x1="5.08" y1="4.318" x2="0.762" y2="0" width="0.381" layer="94" curve="-90"/>
-<wire x1="-0.508" y1="5.08" x2="-0.508" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="-0.508" y1="0.508" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0.508" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="0.508" x2="0.508" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="1.27" width="0.1524" layer="94"/>
-<text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="R107064070">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<wire x1="4.318" y1="4.064" x2="3.048" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-1.016" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="0" y1="-4.826" x2="2.54" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-4.826" x2="3.048" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-4.826" x2="4.064" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-4.826" x2="4.064" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-4.572" x2="4.064" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-3.048" x2="4.064" y2="-2.794" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-2.794" x2="3.048" y2="-2.794" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-2.794" x2="2.54" y2="-2.794" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.794" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="4.318" y1="3.556" x2="3.81" y2="2.032" width="0.1524" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.794" x2="2.54" y2="-4.826" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="-4.826" x2="3.048" y2="-2.794" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="-3.048" x2="4.064" y2="-4.572" width="0.1524" layer="94" curve="-180"/>
+<wire x1="5.588" y1="5.08" x2="5.588" y2="-7.62" width="0.2032" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="U.FL-R-SMA">
-<description>Male SMA U.FL Connector:
-
-
-https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6oBoOdtqlGQpQrQ%3D%3D</description>
+<deviceset name="R107064070">
 <gates>
-<gate name="G$1" symbol="U.FL-R-SMT" x="0" y="0"/>
+<gate name="G$1" symbol="R107064070" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="U.FL-R-SMT">
+<device name="" package="R107064070">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2 P$3"/>
@@ -4544,6 +4545,9 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="RF" width="0.38" drill="0.38">
+<clearance class="1" value="1"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
@@ -4557,11 +4561,6 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$12" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
-<part name="U$13" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
-<part name="U$14" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
-<part name="U$15" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
-<part name="U$16" library="J-HRS-U.FL-R-SMT-1(10)-M-RF" deviceset="U.FL-R-SMA" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -4569,6 +4568,11 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <part name="R1" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="50"/>
 <part name="R2" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="50"/>
 <part name="R3" library="oresat-rcl" deviceset="R-US_" device="0805-B-NOSILK" value="50"/>
+<part name="U$1" library="J-Radiall-R107064070-RF" deviceset="R107064070" device=""/>
+<part name="U$2" library="J-Radiall-R107064070-RF" deviceset="R107064070" device=""/>
+<part name="U$3" library="J-Radiall-R107064070-RF" deviceset="R107064070" device=""/>
+<part name="U$4" library="J-Radiall-R107064070-RF" deviceset="R107064070" device=""/>
+<part name="U$5" library="J-Radiall-R107064070-RF" deviceset="R107064070" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4615,40 +4619,20 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <instance part="GND6" gate="1" x="147.32" y="71.12" smashed="yes">
 <attribute name="VALUE" x="144.78" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="38.1" y="119.38" smashed="yes">
-<attribute name="VALUE" x="35.56" y="116.84" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="33.02" y="116.84" smashed="yes">
+<attribute name="VALUE" x="30.48" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="U$12" gate="G$1" x="33.02" y="129.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.86" y="124.46" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="26.67" y="124.46" size="1.778" layer="96" rot="R90"/>
+<instance part="GND7" gate="1" x="228.6" y="144.78" smashed="yes">
+<attribute name="VALUE" x="226.06" y="142.24" size="1.778" layer="96"/>
 </instance>
-<instance part="U$13" gate="G$1" x="228.6" y="157.48" smashed="yes" rot="MR90">
-<attribute name="NAME" x="238.76" y="152.4" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="234.95" y="152.4" size="1.778" layer="96" rot="MR90"/>
+<instance part="GND8" gate="1" x="228.6" y="121.92" smashed="yes">
+<attribute name="VALUE" x="226.06" y="119.38" size="1.778" layer="96"/>
 </instance>
-<instance part="U$14" gate="G$1" x="228.6" y="134.62" smashed="yes" rot="MR90">
-<attribute name="NAME" x="238.76" y="129.54" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="234.95" y="129.54" size="1.778" layer="96" rot="MR90"/>
+<instance part="GND9" gate="1" x="228.6" y="99.06" smashed="yes">
+<attribute name="VALUE" x="226.06" y="96.52" size="1.778" layer="96"/>
 </instance>
-<instance part="U$15" gate="G$1" x="228.6" y="111.76" smashed="yes" rot="MR90">
-<attribute name="NAME" x="238.76" y="106.68" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="234.95" y="106.68" size="1.778" layer="96" rot="MR90"/>
-</instance>
-<instance part="U$16" gate="G$1" x="228.6" y="88.9" smashed="yes" rot="MR90">
-<attribute name="NAME" x="238.76" y="83.82" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="234.95" y="83.82" size="1.778" layer="96" rot="MR90"/>
-</instance>
-<instance part="GND7" gate="1" x="223.52" y="147.32" smashed="yes">
-<attribute name="VALUE" x="220.98" y="144.78" size="1.778" layer="96"/>
-</instance>
-<instance part="GND8" gate="1" x="223.52" y="124.46" smashed="yes">
-<attribute name="VALUE" x="220.98" y="121.92" size="1.778" layer="96"/>
-</instance>
-<instance part="GND9" gate="1" x="223.52" y="101.6" smashed="yes">
-<attribute name="VALUE" x="220.98" y="99.06" size="1.778" layer="96"/>
-</instance>
-<instance part="GND10" gate="1" x="223.52" y="78.74" smashed="yes">
-<attribute name="VALUE" x="220.98" y="76.2" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="228.6" y="76.2" smashed="yes">
+<attribute name="VALUE" x="226.06" y="73.66" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="R" x="68.58" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="67.0814" y="110.49" size="1.778" layer="95" rot="R90"/>
@@ -4662,18 +4646,23 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <attribute name="NAME" x="145.8214" y="77.47" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="150.622" y="77.47" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="U$1" gate="G$1" x="33.02" y="129.54" smashed="yes" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="228.6" y="157.48" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="228.6" y="134.62" smashed="yes"/>
+<instance part="U$4" gate="G$1" x="228.6" y="111.76" smashed="yes"/>
+<instance part="U$5" gate="G$1" x="228.6" y="88.9" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="N$1" class="1">
 <segment>
 <pinref part="U$9" gate="G$1" pin="SUM"/>
 <wire x1="38.1" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$2" class="1">
 <segment>
 <pinref part="U$9" gate="G$1" pin="0"/>
 <wire x1="104.14" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
@@ -4682,7 +4671,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="114.3" y1="147.32" x2="152.4" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="N$3" class="1">
 <segment>
 <pinref part="U$9" gate="G$1" pin="TERM"/>
 <wire x1="73.66" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
@@ -4723,31 +4712,31 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="38.1" y1="121.92" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="P$2"/>
+<wire x1="33.02" y1="119.38" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="U$13" gate="G$1" pin="P$2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="223.52" y1="149.86" x2="223.52" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="147.32" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="U$14" gate="G$1" pin="P$2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="223.52" y1="127" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="124.46" x2="228.6" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="U$15" gate="G$1" pin="P$2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="223.52" y1="104.14" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="101.6" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="U$16" gate="G$1" pin="P$2"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="223.52" y1="81.28" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="78.74" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="N$4" class="1">
 <segment>
 <pinref part="U$10" gate="G$1" pin="TERM"/>
 <wire x1="152.4" y1="139.7" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
@@ -4755,7 +4744,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <pinref part="R2" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$5" class="1">
 <segment>
 <pinref part="U$11" gate="G$1" pin="SUM"/>
 <wire x1="152.4" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
@@ -4774,7 +4763,7 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <wire x1="114.3" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="N$6" class="1">
 <segment>
 <pinref part="U$11" gate="G$1" pin="TERM"/>
 <wire x1="152.4" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
@@ -4782,42 +4771,42 @@ https://www.mouser.com/ProductDetail/Hirose-Connector/UFL-R-SMT-110?qs=kL1ClTr6o
 <pinref part="R3" gate="R" pin="2"/>
 </segment>
 </net>
-<net name="UHF_0" class="0">
+<net name="UHF_0" class="1">
 <segment>
 <pinref part="U$10" gate="G$1" pin="0"/>
 <wire x1="182.88" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
 <label x="203.2" y="147.32" size="1.778" layer="95"/>
 <wire x1="213.36" y1="147.32" x2="213.36" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$1" pin="P$1"/>
 <wire x1="213.36" y1="157.48" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="UHF_90" class="0">
+<net name="UHF_90" class="1">
 <segment>
 <pinref part="U$10" gate="G$1" pin="90"/>
 <wire x1="182.88" y1="139.7" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
 <label x="203.2" y="139.7" size="1.778" layer="95"/>
 <wire x1="213.36" y1="139.7" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$14" gate="G$1" pin="P$1"/>
 <wire x1="213.36" y1="134.62" x2="223.52" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="UHF_270" class="0">
+<net name="UHF_270" class="1">
 <segment>
 <pinref part="U$11" gate="G$1" pin="90"/>
 <label x="203.2" y="88.9" size="1.778" layer="95"/>
 <wire x1="182.88" y1="88.9" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="P$1"/>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="UHF_180" class="0">
+<net name="UHF_180" class="1">
 <segment>
 <pinref part="U$11" gate="G$1" pin="0"/>
 <wire x1="182.88" y1="96.52" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
 <label x="203.2" y="96.52" size="1.778" layer="95"/>
 <wire x1="213.36" y1="96.52" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="P$1"/>
 <wire x1="213.36" y1="111.76" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 </nets>
