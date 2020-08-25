@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -233,60 +233,6 @@
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="Mini-Circuits-QBA-07+_Phase-shifter">
-<packages>
-<package name="QBA-07+">
-<smd name="P$1" x="-2.54" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$2" x="-1.27" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$3" x="0" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$4" x="1.27" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$5" x="2.54" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$6" x="2.54" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$7" x="1.27" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$8" x="0" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$9" x="-1.27" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$10" x="-2.54" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$11" x="0" y="0" dx="5.84" dy="2.54" layer="1"/>
-<circle x="-4" y="-2" radius="0.360553125" width="0.1524" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="QBA-07+">
-<wire x1="-12.7" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="97"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-7.62" width="0.1524" layer="97"/>
-<wire x1="7.62" y1="-7.62" x2="-12.7" y2="-7.62" width="0.1524" layer="97"/>
-<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="5.08" width="0.1524" layer="97"/>
-<pin name="SUM" x="-17.78" y="2.54" visible="pin" length="middle"/>
-<pin name="TERM" x="-17.78" y="-5.08" visible="pin" length="middle"/>
-<pin name="0" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="90" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<text x="-12.7" y="7.62" size="1.778" layer="95">&gt;name</text>
-<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="QBA-07+">
-<gates>
-<gate name="G$1" symbol="QBA-07+" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QBA-07+">
-<connects>
-<connect gate="G$1" pin="0" pad="P$6"/>
-<connect gate="G$1" pin="90" pad="P$10"/>
-<connect gate="G$1" pin="GND" pad="P$2 P$3 P$4 P$7 P$8 P$9 P$11"/>
-<connect gate="G$1" pin="SUM" pad="P$1"/>
-<connect gate="G$1" pin="TERM" pad="P$5"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4537,6 +4483,69 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </deviceset>
 </devicesets>
 </library>
+<library name="U-MiniCirc-QBA-07+_Phase-shifter">
+<packages>
+<package name="QBA-07+">
+<smd name="1" x="-2.54" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="2" x="-1.27" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="3" x="0" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="4" x="1.27" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="5" x="2.54" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="6" x="2.54" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="7" x="1.27" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="8" x="0" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="9" x="-1.27" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="10" x="-2.54" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="GND-NO-PAD" x="0" y="0" dx="5.84" dy="2.54" layer="1" stop="no" thermals="no" cream="no"/>
+<circle x="-4.381" y="-2.889" radius="0.254" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="51"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="51"/>
+<wire x1="3.429" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="3.429" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.429" y1="3.175" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.429" y2="-3.175" width="0.254" layer="21"/>
+<text x="3.556" y="-4.191" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="QBA-07+">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
+<pin name="SUM" x="-12.7" y="2.54" visible="pin" length="short" direction="pas"/>
+<pin name="TERM" x="-12.7" y="-5.08" visible="pin" length="short" direction="pas"/>
+<pin name="0" x="12.7" y="2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="90" x="12.7" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="GND" x="0" y="-10.16" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="-10.16" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.778" layer="94">QBA-07+</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="QBA-07+" prefix="U">
+<gates>
+<gate name="G$1" symbol="QBA-07+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QBA-07+">
+<connects>
+<connect gate="G$1" pin="0" pad="6"/>
+<connect gate="G$1" pin="90" pad="10"/>
+<connect gate="G$1" pin="GND" pad="2 3 4 7 8 9 GND-NO-PAD"/>
+<connect gate="G$1" pin="SUM" pad="1"/>
+<connect gate="G$1" pin="TERM" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4551,9 +4560,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="U$9" library="Mini-Circuits-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
-<part name="U$10" library="Mini-Circuits-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
-<part name="U$11" library="Mini-Circuits-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
+<part name="U1" library="U-MiniCirc-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
+<part name="U2" library="U-MiniCirc-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
+<part name="U3" library="U-MiniCirc-QBA-07+_Phase-shifter" deviceset="QBA-07+" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -4589,15 +4598,15 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="U$9" gate="G$1" x="91.44" y="127" smashed="yes">
+<instance part="U1" gate="G$1" x="91.44" y="127" smashed="yes">
 <attribute name="NAME" x="78.74" y="134.62" size="1.778" layer="95"/>
 <attribute name="VALUE" x="78.74" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="U$10" gate="G$1" x="170.18" y="144.78" smashed="yes">
+<instance part="U2" gate="G$1" x="170.18" y="144.78" smashed="yes">
 <attribute name="NAME" x="157.48" y="152.4" size="1.778" layer="95"/>
 <attribute name="VALUE" x="157.48" y="134.62" size="1.778" layer="96"/>
 </instance>
-<instance part="U$11" gate="G$1" x="170.18" y="93.98" smashed="yes">
+<instance part="U3" gate="G$1" x="170.18" y="93.98" smashed="yes">
 <attribute name="NAME" x="157.48" y="101.6" size="1.778" layer="95"/>
 <attribute name="VALUE" x="157.48" y="83.82" size="1.778" layer="96"/>
 </instance>
@@ -4657,24 +4666,24 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <nets>
 <net name="N$1" class="1">
 <segment>
-<pinref part="U$9" gate="G$1" pin="SUM"/>
-<wire x1="38.1" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="SUM"/>
+<wire x1="38.1" y1="129.54" x2="78.74" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$2" class="1">
 <segment>
-<pinref part="U$9" gate="G$1" pin="0"/>
+<pinref part="U1" gate="G$1" pin="0"/>
 <wire x1="104.14" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="129.54" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="SUM"/>
-<wire x1="114.3" y1="147.32" x2="152.4" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SUM"/>
+<wire x1="114.3" y1="147.32" x2="157.48" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="1">
 <segment>
-<pinref part="U$9" gate="G$1" pin="TERM"/>
-<wire x1="73.66" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="TERM"/>
+<wire x1="78.74" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="121.92" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R" pin="2"/>
 </segment>
@@ -4686,14 +4695,14 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="R1" gate="R" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="91.44" y1="114.3" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="116.84" x2="91.44" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="170.18" y1="132.08" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="134.62" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -4706,9 +4715,9 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <pinref part="R3" gate="R" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="170.18" y1="81.28" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="83.82" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -4738,16 +4747,16 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="N$4" class="1">
 <segment>
-<pinref part="U$10" gate="G$1" pin="TERM"/>
-<wire x1="152.4" y1="139.7" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="TERM"/>
+<wire x1="157.48" y1="139.7" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="139.7" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R2" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="1">
 <segment>
-<pinref part="U$11" gate="G$1" pin="SUM"/>
-<wire x1="152.4" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SUM"/>
+<wire x1="157.48" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="96.52" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="101.6" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
@@ -4759,21 +4768,21 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="119.38" y1="91.44" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="96.52" x2="114.3" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="96.52" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="90"/>
+<pinref part="U1" gate="G$1" pin="90"/>
 <wire x1="114.3" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="1">
 <segment>
-<pinref part="U$11" gate="G$1" pin="TERM"/>
-<wire x1="152.4" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="TERM"/>
+<wire x1="157.48" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="88.9" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R3" gate="R" pin="2"/>
 </segment>
 </net>
 <net name="UHF_0" class="1">
 <segment>
-<pinref part="U$10" gate="G$1" pin="0"/>
+<pinref part="U2" gate="G$1" pin="0"/>
 <wire x1="182.88" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
 <label x="203.2" y="147.32" size="1.778" layer="95"/>
 <wire x1="213.36" y1="147.32" x2="213.36" y2="157.48" width="0.1524" layer="91"/>
@@ -4783,7 +4792,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="UHF_90" class="1">
 <segment>
-<pinref part="U$10" gate="G$1" pin="90"/>
+<pinref part="U2" gate="G$1" pin="90"/>
 <wire x1="182.88" y1="139.7" x2="213.36" y2="139.7" width="0.1524" layer="91"/>
 <label x="203.2" y="139.7" size="1.778" layer="95"/>
 <wire x1="213.36" y1="139.7" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
@@ -4793,7 +4802,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="UHF_270" class="1">
 <segment>
-<pinref part="U$11" gate="G$1" pin="90"/>
+<pinref part="U3" gate="G$1" pin="90"/>
 <label x="203.2" y="88.9" size="1.778" layer="95"/>
 <wire x1="182.88" y1="88.9" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
@@ -4801,7 +4810,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 </net>
 <net name="UHF_180" class="1">
 <segment>
-<pinref part="U$11" gate="G$1" pin="0"/>
+<pinref part="U3" gate="G$1" pin="0"/>
 <wire x1="182.88" y1="96.52" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
 <label x="203.2" y="96.52" size="1.778" layer="95"/>
 <wire x1="213.36" y1="96.52" x2="213.36" y2="111.76" width="0.1524" layer="91"/>

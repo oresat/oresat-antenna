@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,22 +23,22 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -1266,24 +1266,6 @@ This package is identical to 0805-B, but has its tPlace silkscreen layer removed
 </package>
 </packages>
 </library>
-<library name="Mini-Circuits-QBA-07+_Phase-shifter">
-<packages>
-<package name="QBA-07+">
-<smd name="P$1" x="-2.54" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$2" x="-1.27" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$3" x="0" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$4" x="1.27" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$5" x="2.54" y="-2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$6" x="2.54" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$7" x="1.27" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$8" x="0" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$9" x="-1.27" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$10" x="-2.54" y="2.985" dx="0.79" dy="2.41" layer="1"/>
-<smd name="P$11" x="0" y="0" dx="5.84" dy="2.54" layer="1"/>
-<circle x="-4" y="-2" radius="0.360553125" width="0.1524" layer="21"/>
-</package>
-</packages>
-</library>
 <library name="J-Radiall-R107064070-RF">
 <packages>
 <package name="R107064070">
@@ -1298,6 +1280,33 @@ This package is identical to 0805-B, but has its tPlace silkscreen layer removed
 <rectangle x1="-2.3" y1="-0.45" x2="-1.5" y2="0.45" layer="31"/>
 <rectangle x1="-0.45" y1="-1.55" x2="0.45" y2="-0.45" layer="31"/>
 <rectangle x1="1.5" y1="-0.45" x2="2.3" y2="0.45" layer="31"/>
+</package>
+</packages>
+</library>
+<library name="U-MiniCirc-QBA-07+_Phase-shifter">
+<packages>
+<package name="QBA-07+">
+<smd name="1" x="-2.54" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="2" x="-1.27" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="3" x="0" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="4" x="1.27" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="5" x="2.54" y="-2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="6" x="2.54" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="7" x="1.27" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="8" x="0" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="9" x="-1.27" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="10" x="-2.54" y="2.985" dx="0.762" dy="2.413" layer="1"/>
+<smd name="GND-NO-PAD" x="0" y="0" dx="5.84" dy="2.54" layer="1" stop="no" thermals="no" cream="no"/>
+<circle x="-4.381" y="-2.889" radius="0.254" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="51"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="51"/>
+<wire x1="3.429" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="3.429" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.429" y1="3.175" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.429" y2="-3.175" width="0.254" layer="21"/>
+<text x="3.556" y="-4.191" size="0.635" layer="25" font="vector" ratio="20">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1491,9 +1500,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="U$9" library="Mini-Circuits-QBA-07+_Phase-shifter" package="QBA-07+" value="QBA-07+" x="86" y="50" smashed="yes" rot="R180"/>
-<element name="U$10" library="Mini-Circuits-QBA-07+_Phase-shifter" package="QBA-07+" value="QBA-07+" x="49.9" y="62" smashed="yes"/>
-<element name="U$11" library="Mini-Circuits-QBA-07+_Phase-shifter" package="QBA-07+" value="QBA-07+" x="49.9" y="37.8" smashed="yes" rot="R180"/>
+<element name="U1" library="U-MiniCirc-QBA-07+_Phase-shifter" package="QBA-07+" value="QBA-07+" x="86" y="50" smashed="yes" rot="R180"/>
+<element name="U2" library="U-MiniCirc-QBA-07+_Phase-shifter" package="QBA-07+" value="QBA-07+" x="49.9" y="62" smashed="yes"/>
+<element name="U3" library="U-MiniCirc-QBA-07+_Phase-shifter" package="QBA-07+" value="QBA-07+" x="49.9" y="37.8" smashed="yes" rot="R180"/>
 <element name="R1" library="oresat-rcl" package=".0805-B-NOSILK" value="50" x="83.45" y="57.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="84.45" y="58.66" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="NAME" x="83.45" y="57.16" size="0.4" layer="33" ratio="15" rot="R270" align="center"/>
@@ -1517,27 +1526,27 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="U$9" pad="P$2"/>
-<contactref element="U$9" pad="P$4"/>
-<contactref element="U$9" pad="P$8"/>
-<contactref element="U$9" pad="P$9"/>
-<contactref element="U$9" pad="P$11"/>
-<contactref element="U$9" pad="P$3"/>
-<contactref element="U$9" pad="P$7"/>
-<contactref element="U$10" pad="P$2"/>
-<contactref element="U$10" pad="P$4"/>
-<contactref element="U$10" pad="P$8"/>
-<contactref element="U$10" pad="P$9"/>
-<contactref element="U$10" pad="P$11"/>
-<contactref element="U$10" pad="P$3"/>
-<contactref element="U$10" pad="P$7"/>
-<contactref element="U$11" pad="P$2"/>
-<contactref element="U$11" pad="P$4"/>
-<contactref element="U$11" pad="P$8"/>
-<contactref element="U$11" pad="P$9"/>
-<contactref element="U$11" pad="P$11"/>
-<contactref element="U$11" pad="P$3"/>
-<contactref element="U$11" pad="P$7"/>
+<contactref element="U1" pad="2"/>
+<contactref element="U1" pad="4"/>
+<contactref element="U1" pad="8"/>
+<contactref element="U1" pad="9"/>
+<contactref element="U1" pad="GND-NO-PAD"/>
+<contactref element="U1" pad="3"/>
+<contactref element="U1" pad="7"/>
+<contactref element="U2" pad="2"/>
+<contactref element="U2" pad="4"/>
+<contactref element="U2" pad="8"/>
+<contactref element="U2" pad="9"/>
+<contactref element="U2" pad="GND-NO-PAD"/>
+<contactref element="U2" pad="3"/>
+<contactref element="U2" pad="7"/>
+<contactref element="U3" pad="2"/>
+<contactref element="U3" pad="4"/>
+<contactref element="U3" pad="8"/>
+<contactref element="U3" pad="9"/>
+<contactref element="U3" pad="GND-NO-PAD"/>
+<contactref element="U3" pad="3"/>
+<contactref element="U3" pad="7"/>
 <contactref element="R1" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R3" pad="1"/>
@@ -1895,7 +1904,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="70" y="75" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$1" class="1">
-<contactref element="U$9" pad="P$1"/>
+<contactref element="U1" pad="1"/>
 <contactref element="U$1" pad="P$1"/>
 <wire x1="87" y1="76" x2="86" y2="76" width="0.38" layer="1"/>
 <wire x1="86" y1="76" x2="83" y2="73" width="0.38" layer="1" curve="90"/>
@@ -1906,8 +1915,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="88.54" y1="59.217359375" x2="88.54" y2="52.985" width="0.38" layer="1"/>
 </signal>
 <signal name="N$2" class="1">
-<contactref element="U$9" pad="P$6"/>
-<contactref element="U$10" pad="P$1"/>
+<contactref element="U1" pad="6"/>
+<contactref element="U2" pad="1"/>
 <wire x1="83.46" y1="47.015" x2="83.46" y2="44" width="0.38" layer="1"/>
 <wire x1="83.46" y1="44" x2="80.46" y2="41" width="0.38" layer="1" curve="-90"/>
 <wire x1="80.46" y1="41" x2="62.242640625" y2="41" width="0.38" layer="1"/>
@@ -1917,20 +1926,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="47.36" y1="55.882640625" x2="47.36" y2="59.015" width="0.38" layer="1"/>
 </signal>
 <signal name="N$3" class="1">
-<contactref element="U$9" pad="P$5"/>
+<contactref element="U1" pad="5"/>
 <contactref element="R1" pad="2"/>
 <wire x1="83.45" y1="56.26" x2="83.46" y2="56.235859375" width="0.38" layer="1" curve="-45"/>
 <wire x1="83.46" y1="56.235859375" x2="83.46" y2="52.985" width="0.38" layer="1"/>
 </signal>
 <signal name="N$4" class="1">
-<contactref element="U$10" pad="P$5"/>
+<contactref element="U2" pad="5"/>
 <contactref element="R2" pad="2"/>
 <wire x1="55.75" y1="59.01" x2="52.452071875" y2="59.01" width="0.38" layer="1"/>
 <wire x1="52.452071875" y1="59.01" x2="52.44" y2="59.015" width="0.38" layer="1" curve="-45"/>
 </signal>
 <signal name="N$5" class="1">
-<contactref element="U$11" pad="P$1"/>
-<contactref element="U$9" pad="P$10"/>
+<contactref element="U3" pad="1"/>
+<contactref element="U1" pad="10"/>
 <wire x1="88.54" y1="47.015" x2="88.54" y2="33.58" width="0.38" layer="1"/>
 <wire x1="88.54" y1="33.58" x2="68.96" y2="14" width="0.38" layer="1" curve="-90"/>
 <wire x1="68.96" y1="14" x2="25.79" y2="14" width="0.38" layer="1"/>
@@ -1944,34 +1953,34 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="52.44" y1="43" x2="52.44" y2="40.785" width="0.38" layer="1"/>
 </signal>
 <signal name="N$6" class="1">
-<contactref element="U$11" pad="P$5"/>
+<contactref element="U3" pad="5"/>
 <contactref element="R3" pad="2"/>
 <wire x1="44.89" y1="40.78" x2="47.347928125" y2="40.78" width="0.38" layer="1"/>
 <wire x1="47.347928125" y1="40.78" x2="47.36" y2="40.785" width="0.38" layer="1" curve="45"/>
 </signal>
 <signal name="UHF_0" class="1">
-<contactref element="U$10" pad="P$6"/>
+<contactref element="U2" pad="6"/>
 <contactref element="U$2" pad="P$1"/>
 <wire x1="52.44" y1="64.985" x2="58.771796875" y2="64.985" width="0.38" layer="1"/>
 <wire x1="58.771796875" y1="64.985" x2="69.378396875" y2="69.378396875" width="0.38" layer="1" curve="44.999992"/>
 <wire x1="69.378396875" y1="69.378396875" x2="72.592890625" y2="72.592890625" width="0.38" layer="1"/>
 </signal>
 <signal name="UHF_90" class="1">
-<contactref element="U$10" pad="P$10"/>
+<contactref element="U2" pad="10"/>
 <contactref element="U$3" pad="P$1"/>
 <wire x1="47.36" y1="64.985" x2="41.0282" y2="64.985" width="0.38" layer="1"/>
 <wire x1="41.0282" y1="64.985" x2="30.4216" y2="69.378396875" width="0.38" layer="1" curve="-44.999992"/>
 <wire x1="30.4216" y1="69.378396875" x2="27.20710625" y2="72.592890625" width="0.38" layer="1"/>
 </signal>
 <signal name="UHF_270" class="1">
-<contactref element="U$11" pad="P$10"/>
+<contactref element="U3" pad="10"/>
 <contactref element="U$5" pad="P$1"/>
 <wire x1="52.44" y1="34.815" x2="58.77179375" y2="34.815" width="0.38" layer="1"/>
 <wire x1="58.77179375" y1="34.815" x2="69.37839375" y2="30.421603125" width="0.38" layer="1" curve="-44.999992"/>
 <wire x1="69.37839375" y1="30.421603125" x2="72.592890625" y2="27.20710625" width="0.38" layer="1"/>
 </signal>
 <signal name="UHF_180" class="1">
-<contactref element="U$11" pad="P$6"/>
+<contactref element="U3" pad="6"/>
 <contactref element="U$4" pad="P$1"/>
 <wire x1="47.36" y1="34.815" x2="41.028203125" y2="34.815" width="0.38" layer="1"/>
 <wire x1="41.028203125" y1="34.815" x2="30.421603125" y2="30.421603125" width="0.38" layer="1" curve="44.999992"/>
