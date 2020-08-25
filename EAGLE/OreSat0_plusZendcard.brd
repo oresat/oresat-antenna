@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -1098,7 +1098,7 @@
 <libraries>
 <library name="J-Molex-SMPM-73300-003X">
 <packages>
-<package name="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-073300-003X">
+<package name="J-MOLEX-SMPM-73300-003X">
 <wire x1="1.7" y1="-1.7" x2="1.7" y2="-1.75" width="0" layer="41"/>
 <wire x1="-2" y1="0" x2="-1.5748" y2="0" width="0" layer="20"/>
 <wire x1="-1.5748" y1="0" x2="-1.5748" y2="-2.921" width="0" layer="20"/>
@@ -2757,16 +2757,17 @@ type 0309, grid 12.5 mm</description>
 <library name="J-Radiall-R107064070-RF">
 <packages>
 <package name="R107064070_CONTACT">
-<smd name="P$1" x="0" y="-1.2" dx="1.5" dy="1.8" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$2" x="-2.1" y="0" dx="1.5" dy="2" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$3" x="2.1" y="0" dx="1.5" dy="2" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$1" x="0" y="-1.2" dx="1.5" dy="1.8" layer="1" thermals="no" cream="no"/>
+<smd name="P$2" x="-2.1" y="0" dx="1.5" dy="2" layer="1" thermals="no" cream="no"/>
+<smd name="P$3" x="2.1" y="0" dx="1.5" dy="2" layer="1" thermals="no" cream="no"/>
 <rectangle x1="-1.35" y1="-0.3" x2="1.35" y2="1" layer="41"/>
-<rectangle x1="-4" y1="-2.5" x2="4" y2="2" layer="29"/>
 <rectangle x1="-2.7" y1="-0.8" x2="-1.5" y2="0.8" layer="31"/>
 <rectangle x1="1.5" y1="-0.8" x2="2.7" y2="0.8" layer="31"/>
 <rectangle x1="-0.6" y1="-1.9" x2="0.6" y2="-0.5" layer="31"/>
 <rectangle x1="-1.35" y1="-2.5" x2="-0.75" y2="-0.3" layer="41"/>
 <rectangle x1="0.75" y1="-2.5" x2="1.35" y2="-0.3" layer="41"/>
+<text x="-2" y="3" size="0.655" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2" y="2" size="0.655" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -2966,12 +2967,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <board_group name="DEPLOYER"/>
 </groups>
 <elements>
-<element name="CM1" library="J-Molex-SMPM-73300-003X" package="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-073300-003X" value="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-73300-003X" x="77.9" y="90.7" smashed="yes">
-<attribute name="NAME" x="80.853" y="84.823" size="0.635" layer="25" font="vector" ratio="20"/>
-</element>
-<element name="CM2" library="J-Molex-SMPM-73300-003X" package="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-073300-003X" value="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-73300-003X" x="83.9" y="90.7" smashed="yes">
-<attribute name="NAME" x="86.853" y="84.823" size="0.635" layer="25" font="vector" ratio="20"/>
-</element>
 <element name="U$1" library="Mini-Circuits-QCN-19D+_Phase-shifter" package="QVN-19D+" value="QCN-19D+" x="64" y="50" smashed="yes" rot="MR270"/>
 <element name="U$2" library="Mini-Circuits-QCN-19D+_Phase-shifter" package="QVN-19D+" value="QCN-19D+" x="41.98" y="56" smashed="yes" rot="MR0"/>
 <element name="U$3" library="Mini-Circuits-QCN-19D+_Phase-shifter" package="QVN-19D+" value="QCN-19D+" x="57.82" y="43.8" smashed="yes" rot="MR180"/>
@@ -3000,19 +2995,54 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="84.1" y="50.3" size="0.635" layer="26" font="vector" ratio="20" rot="MR270"/>
 </element>
 <element name="J1" library="J-Harwin-M55-7101242-Solar-card-connector" package="M55-7101242R" value="Harwin M55-7101242R" x="49.9" y="87.65" locked="yes" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="SMT 12 pos Conn Header 1.27mm pitch" x="49.9" y="87.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="49.9" y="87.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST_PN" value="952-3891-ND" x="49.9" y="87.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="GENERIC" value="N" x="49.9" y="87.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG" value="Harwin Inc." x="49.9" y="87.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="M55-7101242R" x="49.9" y="87.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="45.9" y="82.65" locked="yes" size="0.635" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="P-NP" value="P" x="49.9" y="87.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J2" library="J-Harwin-M55-7101242-Solar-card-connector" package="M55-7101242R" value="Harwin M55-7101242R" x="12.15" y="49.9" locked="yes" smashed="yes" rot="R270">
+<attribute name="DESCRIPTION" value="SMT 12 pos Conn Header 1.27mm pitch" x="12.15" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="12.15" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST_PN" value="952-3891-ND" x="12.15" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="GENERIC" value="N" x="12.15" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG" value="Harwin Inc." x="12.15" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PN" value="M55-7101242R" x="12.15" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="17.15" y="45.9" locked="yes" size="0.635" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="P-NP" value="P" x="12.15" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J3" library="J-Harwin-M55-7101242-Solar-card-connector" package="M55-7101242R" value="Harwin M55-7101242R" x="49.9" y="12.15" locked="yes" smashed="yes">
+<attribute name="DESCRIPTION" value="SMT 12 pos Conn Header 1.27mm pitch" x="49.9" y="12.15" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="49.9" y="12.15" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_PN" value="952-3891-ND" x="49.9" y="12.15" size="1.778" layer="27" display="off"/>
+<attribute name="GENERIC" value="N" x="49.9" y="12.15" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="Harwin Inc." x="49.9" y="12.15" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="M55-7101242R" x="49.9" y="12.15" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="53.9" y="17.15" locked="yes" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="P-NP" value="P" x="49.9" y="12.15" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J4" library="J-Harwin-M55-7101242-Solar-card-connector" package="M55-7101242R" value="Harwin M55-7101242R" x="87.65" y="49.9" locked="yes" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="SMT 12 pos Conn Header 1.27mm pitch" x="87.65" y="49.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="87.65" y="49.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST_PN" value="952-3891-ND" x="87.65" y="49.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="GENERIC" value="N" x="87.65" y="49.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG" value="Harwin Inc." x="87.65" y="49.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PN" value="M55-7101242R" x="87.65" y="49.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="82.65" y="53.9" locked="yes" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="P-NP" value="P" x="87.65" y="49.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="CF1" library="J-Harwin-M55-60X1242R-12pin-1.27mm-F-vertical" package="HARWIN-M55-60X1242R" value="J-HARWIN-M55-60X1242R" x="7.4" y="78.8" locked="yes" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="connector" x="7.4" y="78.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="7.4" y="78.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST_PN" value="952-3851-1-ND" x="7.4" y="78.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="GENERIC" value="N" x="7.4" y="78.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG" value="Harwin" x="7.4" y="78.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PN" value="M55-6021242R" x="7.4" y="78.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="7.4" y="85.785" locked="yes" size="0.635" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="P-NP" value="P" x="7.4" y="78.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R1" library="oresat-rcl" package=".0805-B-NOSILK" value="50" x="64.1" y="47.05" smashed="yes" rot="MR180">
 <attribute name="NAME" x="62.6" y="46.05" size="0.8" layer="26" font="vector" ratio="15" rot="MR180"/>
@@ -3037,15 +3067,74 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="46.889475" y="46.98355625" locked="yes" size="1.27" layer="25" ratio="10" rot="R45"/>
 <attribute name="VALUE" x="49.43986875" y="45.870003125" locked="yes" size="1.27" layer="27" ratio="10" rot="R45"/>
 </element>
-<element name="U$4" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="88" y="76" smashed="yes" rot="MR90"/>
-<element name="U$5" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="73.3" y="26.5" smashed="yes" rot="MR135"/>
-<element name="U$6" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="26.5" y="26.5" smashed="yes" rot="MR225"/>
-<element name="U$7" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="26.507109375" y="73.292890625" smashed="yes" rot="MR315"/>
-<element name="U$8" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="73.3" y="73.3" smashed="yes" rot="MR45"/>
+<element name="U$4" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="88" y="76" smashed="yes" rot="MR90">
+<attribute name="DESCRIPTION" value="Landing pad for RF connector" x="88" y="76" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIST" value="" x="88" y="76" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIST_PN" value="" x="88" y="76" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="GENERIC" value="" x="88" y="76" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MFG" value="" x="88" y="76" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MFG_PN" value="" x="88" y="76" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="P-NP" value="NP" x="88" y="76" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="U$5" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="73.3" y="26.5" smashed="yes" rot="MR135">
+<attribute name="DESCRIPTION" value="Landing pad for RF connector" x="73.3" y="26.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="DIST" value="" x="73.3" y="26.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="DIST_PN" value="" x="73.3" y="26.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="GENERIC" value="" x="73.3" y="26.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MFG" value="" x="73.3" y="26.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MFG_PN" value="" x="73.3" y="26.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="P-NP" value="NP" x="73.3" y="26.5" size="1.778" layer="28" rot="MR135" display="off"/>
+</element>
+<element name="U$6" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="26.5" y="26.5" smashed="yes" rot="MR225">
+<attribute name="DESCRIPTION" value="Landing pad for RF connector" x="26.5" y="26.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="DIST" value="" x="26.5" y="26.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="DIST_PN" value="" x="26.5" y="26.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="GENERIC" value="" x="26.5" y="26.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="MFG" value="" x="26.5" y="26.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="MFG_PN" value="" x="26.5" y="26.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="P-NP" value="NP" x="26.5" y="26.5" size="1.778" layer="28" rot="MR225" display="off"/>
+</element>
+<element name="U$7" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="26.507109375" y="73.292890625" smashed="yes" rot="MR315">
+<attribute name="DESCRIPTION" value="Landing pad for RF connector" x="26.507109375" y="73.292890625" size="1.778" layer="28" rot="MR315" display="off"/>
+<attribute name="DIST" value="" x="26.507109375" y="73.292890625" size="1.778" layer="28" rot="MR315" display="off"/>
+<attribute name="DIST_PN" value="" x="26.507109375" y="73.292890625" size="1.778" layer="28" rot="MR315" display="off"/>
+<attribute name="GENERIC" value="" x="26.507109375" y="73.292890625" size="1.778" layer="28" rot="MR315" display="off"/>
+<attribute name="MFG" value="" x="26.507109375" y="73.292890625" size="1.778" layer="28" rot="MR315" display="off"/>
+<attribute name="MFG_PN" value="" x="26.507109375" y="73.292890625" size="1.778" layer="28" rot="MR315" display="off"/>
+<attribute name="P-NP" value="NP" x="26.507109375" y="73.292890625" size="1.778" layer="28" rot="MR315" display="off"/>
+</element>
+<element name="U$8" library="J-Radiall-R107064070-RF" package="R107064070_CONTACT" value="R107064070_CONTACT" x="73.3" y="73.3" smashed="yes" rot="MR45">
+<attribute name="DESCRIPTION" value="Landing pad for RF connector" x="73.3" y="73.3" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="DIST" value="" x="73.3" y="73.3" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="DIST_PN" value="" x="73.3" y="73.3" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="GENERIC" value="" x="73.3" y="73.3" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MFG" value="" x="73.3" y="73.3" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MFG_PN" value="" x="73.3" y="73.3" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="P-NP" value="NP" x="73.3" y="73.3" size="1.778" layer="28" rot="MR45" display="off"/>
+</element>
+<element name="CM3" library="J-Molex-SMPM-73300-003X" package="J-MOLEX-SMPM-73300-003X" value="J-MOLEX-SMPM-73300-003X" x="83.9" y="90.7" smashed="yes">
+<attribute name="DESCRIPTION" value="Edge mounted SMPM 50 ohm RF connector" x="83.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="83.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_PN" value="WM10772-ND" x="83.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="GENERIC" value="N" x="83.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="MOLEX" x="83.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="0733000020" x="83.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="86.853" y="84.823" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="P-NP" value="P" x="83.9" y="90.7" size="1.778" layer="27" display="off"/>
+</element>
+<element name="CM2" library="J-Molex-SMPM-73300-003X" package="J-MOLEX-SMPM-73300-003X" value="J-MOLEX-SMPM-73300-003X" x="77.9" y="90.7" smashed="yes">
+<attribute name="DESCRIPTION" value="Edge mounted SMPM 50 ohm RF connector" x="77.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digi-Key" x="77.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_PN" value="WM10772-ND" x="77.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="GENERIC" value="N" x="77.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFG" value="MOLEX" x="77.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="0733000020" x="77.9" y="90.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="80.853" y="84.823" size="0.635" layer="25" font="vector" ratio="20"/>
+<attribute name="P-NP" value="P" x="77.9" y="90.7" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1" class="1">
-<contactref element="CM1" pad="RF"/>
 <contactref element="U$1" pad="P$1"/>
 <wire x1="77.9" y1="85.62" x2="77.9" y2="83.6" width="0.38" layer="1"/>
 <via x="77.9" y="83.6" extent="1-16" drill="0.38"/>
@@ -3060,6 +3149,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="68.025" y1="55" x2="65.025" y2="52" width="0.38" layer="16" curve="90"/>
 <wire x1="65.025" y1="52" x2="65.025" y2="50.99" width="0.38" layer="16"/>
 <wire x1="74.9" y1="55" x2="68.025" y2="55" width="0.38" layer="16"/>
+<contactref element="CM2" pad="RF"/>
 </signal>
 <signal name="N$3">
 <contactref element="U$1" pad="P$3"/>
@@ -3070,14 +3160,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="GND">
 <contactref element="U$1" pad="P$5"/>
 <contactref element="U$1" pad="P$2"/>
-<contactref element="CM2" pad="P$1"/>
-<contactref element="CM2" pad="P$2"/>
-<contactref element="CM2" pad="P$4"/>
-<contactref element="CM2" pad="P$3"/>
-<contactref element="CM1" pad="P$1"/>
-<contactref element="CM1" pad="P$2"/>
-<contactref element="CM1" pad="P$4"/>
-<contactref element="CM1" pad="P$3"/>
 <polygon width="0.127" layer="1" isolate="0.2" rank="6">
 <vertex x="0" y="0"/>
 <vertex x="0" y="94.7"/>
@@ -3486,6 +3568,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="5.7" y="79.4" extent="1-16" drill="0.254"/>
 <via x="8.8" y="79.5" extent="1-16" drill="0.254"/>
 <via x="11.3" y="79.4" extent="1-16" drill="0.254"/>
+<contactref element="CM3" pad="P$4"/>
+<contactref element="CM3" pad="P$3"/>
+<contactref element="CM3" pad="P$2"/>
+<contactref element="CM3" pad="P$1"/>
+<contactref element="CM2" pad="P$4"/>
+<contactref element="CM2" pad="P$3"/>
+<contactref element="CM2" pad="P$2"/>
+<contactref element="CM2" pad="P$1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$3" pad="P$3"/>
@@ -3961,12 +4051,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="N$12" class="1">
 <contactref element="U$4" pad="P$1"/>
-<contactref element="CM2" pad="RF"/>
 <wire x1="83.9" y1="85.62" x2="83.9" y2="83.6" width="0.38" layer="1"/>
 <via x="83.9" y="83.6" extent="1-16" drill="0.38"/>
 <wire x1="83.9" y1="83.6" x2="83.9" y2="78" width="0.38" layer="16"/>
 <wire x1="83.9" y1="78" x2="85.9" y2="76" width="0.38" layer="16" curve="90"/>
 <wire x1="85.9" y1="76" x2="86.8" y2="76" width="0.38" layer="16"/>
+<contactref element="CM3" pad="RF"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -3993,7 +4083,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="4,1,fd6db0c3a8447d44"/>
 <approved hash="4,1,2cca2e1af87f51b6"/>
 <approved hash="4,1,ec597a71fa9df9a6"/>
-<approved hash="4,1,c3469295a7633b55"/>
 <approved hash="4,1,d809584b674d0b55"/>
 <approved hash="4,1,78c8061e3edd18a6"/>
 <approved hash="4,1,b959a437709fb674"/>
@@ -4171,13 +4260,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="5,16,bc04058da582f86b"/>
 <approved hash="5,16,54bd8b9b27ffb368"/>
 <approved hash="5,16,d852ddc5564d4b6e"/>
-<approved hash="4,1,8e82b13320fd93c1"/>
-<approved hash="5,16,dc49017990421514"/>
 <approved hash="4,1,cfe93ad78017c67c"/>
-<approved hash="4,1,de872932d01e6fc6"/>
 <approved hash="4,1,2ce2eada83678633"/>
-<approved hash="4,1,bfad2e72b36b8bb2"/>
-<approved hash="4,1,460cdb174e0d45e3"/>
 <approved hash="4,1,010dd1f4c6127c01"/>
 <approved hash="4,1,7166295149d4f565"/>
 </errors>

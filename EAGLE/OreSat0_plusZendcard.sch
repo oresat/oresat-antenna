@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -276,7 +276,7 @@
 </library>
 <library name="J-Molex-SMPM-73300-003X">
 <packages>
-<package name="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-073300-003X">
+<package name="J-MOLEX-SMPM-73300-003X">
 <wire x1="1.7" y1="-1.7" x2="1.7" y2="-1.75" width="0" layer="41"/>
 <wire x1="-2" y1="0" x2="-1.5748" y2="0" width="0" layer="20"/>
 <wire x1="-1.5748" y1="0" x2="-1.5748" y2="-2.921" width="0" layer="20"/>
@@ -392,12 +392,16 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-73300-003X" prefix="CM">
+<deviceset name="J-MOLEX-SMPM-73300-003X" prefix="CM">
+<description>&lt;b&gt;Edge mounted 50 ohm SMPM RF connection&lt;/b&gt;&lt;p&gt;
+
+&lt;b&gt;Molex 0733000020&lt;/b&gt;&lt;br&gt;
+&lt;a href="https://www.molex.com/pdm_docs/ps/PS-89675-3730.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="J-MOLEX-SMPM-73300-003X_CON-COAX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-073300-003X">
+<device name="" package="J-MOLEX-SMPM-73300-003X">
 <connects>
 <connect gate="G$1" pin="CENTER" pad="RF"/>
 <connect gate="G$1" pin="SHIELD" pad="P$4"/>
@@ -406,7 +410,15 @@
 <connect gate="G$1" pin="SHIELD3" pad="P$1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="Edge mounted SMPM 50 ohm RF connector"/>
+<attribute name="DIST" value="Digi-Key" constant="no"/>
+<attribute name="DIST_PN" value="WM10772-ND" constant="no"/>
+<attribute name="GENERIC" value="N"/>
+<attribute name="MFG" value="MOLEX"/>
+<attribute name="MFG_PN" value="0733000020"/>
+<attribute name="P-NP" value="P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1001,9 +1013,11 @@
 </symbols>
 <devicesets>
 <deviceset name="SOLAR-CARD-CONNECTOR" prefix="J">
-<description>&lt;b&gt;OreSat End Card Solar Connector &lt;/b&gt;
+<description>&lt;b&gt;OreSat End Card Solar Connector &lt;/b&gt;&lt;p&gt;
 
-This 12pin 1.27 mm male SMT connector (Harwin M55-7101242R) is used on the end cards to attach to the solar boards. &lt;b&gt;Note:&lt;/b&gt; alignment pin hole diameters are 0.05 mm smaller than recommended in order to tighten up connector location; this requires hand placement of this package.&lt;/p&gt;</description>
+This 12pin 1.27 mm male SMT connector (Harwin M55-7101242R) is used on the end cards to attach to the solar boards.&lt;p&gt;
+
+&lt;b&gt;Note:&lt;/b&gt; alignment pin hole diameters are 0.05 mm smaller than recommended in order to tighten up connector location; this requires hand placement of this package.</description>
 <gates>
 <gate name="G$1" symbol="SOLAR-CONNECTOR" x="0" y="0"/>
 </gates>
@@ -1019,7 +1033,15 @@ This 12pin 1.27 mm male SMT connector (Harwin M55-7101242R) is used on the end c
 <connect gate="G$1" pin="VBUS" pad="5 6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="SMT 12 pos Conn Header 1.27mm pitch" constant="no"/>
+<attribute name="DIST" value="Digi-Key" constant="no"/>
+<attribute name="DIST_PN" value="952-3891-ND" constant="no"/>
+<attribute name="GENERIC" value="N"/>
+<attribute name="MFG" value="Harwin Inc." constant="no"/>
+<attribute name="MFG_PN" value="M55-7101242R"/>
+<attribute name="P-NP" value="P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1128,7 +1150,15 @@ This 12pin 1.27 mm male SMT connector (Harwin M55-7101242R) is used on the end c
 <connect gate="G$1" pin="SHIELDS" pad="P$1 P$2 P$3 P$4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="connector" constant="no"/>
+<attribute name="DIST" value="Digi-Key" constant="no"/>
+<attribute name="DIST_PN" value="952-3851-1-ND" constant="no"/>
+<attribute name="GENERIC" value="N"/>
+<attribute name="MFG" value="Harwin"/>
+<attribute name="MFG_PN" value="M55-6021242R"/>
+<attribute name="P-NP" value="P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5287,16 +5317,17 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <library name="J-Radiall-R107064070-RF">
 <packages>
 <package name="R107064070_CONTACT">
-<smd name="P$1" x="0" y="-1.2" dx="1.5" dy="1.8" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$2" x="-2.1" y="0" dx="1.5" dy="2" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$3" x="2.1" y="0" dx="1.5" dy="2" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$1" x="0" y="-1.2" dx="1.5" dy="1.8" layer="1" thermals="no" cream="no"/>
+<smd name="P$2" x="-2.1" y="0" dx="1.5" dy="2" layer="1" thermals="no" cream="no"/>
+<smd name="P$3" x="2.1" y="0" dx="1.5" dy="2" layer="1" thermals="no" cream="no"/>
 <rectangle x1="-1.35" y1="-0.3" x2="1.35" y2="1" layer="41"/>
-<rectangle x1="-4" y1="-2.5" x2="4" y2="2" layer="29"/>
 <rectangle x1="-2.7" y1="-0.8" x2="-1.5" y2="0.8" layer="31"/>
 <rectangle x1="1.5" y1="-0.8" x2="2.7" y2="0.8" layer="31"/>
 <rectangle x1="-0.6" y1="-1.9" x2="0.6" y2="-0.5" layer="31"/>
 <rectangle x1="-1.35" y1="-2.5" x2="-0.75" y2="-0.3" layer="41"/>
 <rectangle x1="0.75" y1="-2.5" x2="1.35" y2="-0.3" layer="41"/>
+<text x="-2" y="3" size="0.655" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2" y="2" size="0.655" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -5324,10 +5355,15 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <wire x1="-2.54" y1="-2.794" x2="-2.54" y2="-4.826" width="0.1524" layer="94"/>
 <wire x1="-2.032" y1="-4.826" x2="-2.032" y2="-2.794" width="0.1524" layer="94"/>
 <wire x1="-1.016" y1="-3.048" x2="-1.016" y2="-4.572" width="0.1524" layer="94" curve="-180"/>
+<text x="5.08" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="R107064070_CONTACT">
+<description>&lt;b&gt;Contact pad for surface to surface RF connector&lt;/b&gt;&lt;p&gt;
+This is not a physical part, it's just a landing pad&lt;br&gt;
+Datasheet for physical part: &lt;a href="https://www.mouser.com/datasheet/2/516/radiall_radls10120-1-1746158.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="R107064070_CONTACT" x="0" y="0"/>
 </gates>
@@ -5338,7 +5374,15 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <connect gate="G$1" pin="P$2" pad="P$2 P$3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value="Landing pad for RF connector"/>
+<attribute name="DIST" value=""/>
+<attribute name="DIST_PN" value=""/>
+<attribute name="GENERIC" value=""/>
+<attribute name="MFG" value=""/>
+<attribute name="MFG_PN" value=""/>
+<attribute name="P-NP" value="NP"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5368,9 +5412,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="CM1" library="J-Molex-SMPM-73300-003X" deviceset="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-73300-003X" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
-<part name="CM2" library="J-Molex-SMPM-73300-003X" deviceset="J-MOLEX-SMPM-73300-003X_J-MOLEX-SMPM-73300-003X" device=""/>
 <part name="U$1" library="Mini-Circuits-QCN-19D+_Phase-shifter" deviceset="QCN-19D+" device=""/>
 <part name="U$2" library="Mini-Circuits-QCN-19D+_Phase-shifter" deviceset="QCN-19D+" device=""/>
 <part name="U$3" library="Mini-Circuits-QCN-19D+_Phase-shifter" deviceset="QCN-19D+" device=""/>
@@ -5418,6 +5460,8 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="CM3" library="J-Molex-SMPM-73300-003X" deviceset="J-MOLEX-SMPM-73300-003X" device=""/>
+<part name="CM2" library="J-Molex-SMPM-73300-003X" deviceset="J-MOLEX-SMPM-73300-003X" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5974,12 +6018,8 @@ PCB</text>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="CM2" gate="G$1" x="29.21" y="101.6" smashed="yes">
-<attribute name="NAME" x="34.29" y="97.79" size="1.27" layer="95"/>
-<attribute name="VALUE" x="34.29" y="95.25" size="1.27" layer="95"/>
-</instance>
-<instance part="GND13" gate="1" x="29.21" y="91.44" smashed="yes">
-<attribute name="VALUE" x="26.67" y="88.9" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="30.48" y="91.44" smashed="yes">
+<attribute name="VALUE" x="27.94" y="88.9" size="1.778" layer="96"/>
 </instance>
 <instance part="GND7" gate="1" x="86.36" y="80.01" smashed="yes">
 <attribute name="VALUE" x="83.82" y="77.47" size="1.778" layer="96"/>
@@ -6001,25 +6041,29 @@ PCB</text>
 <instance part="GND11" gate="1" x="151.13" y="40.64" smashed="yes">
 <attribute name="VALUE" x="148.59" y="38.1" size="1.778" layer="96"/>
 </instance>
+<instance part="CM3" gate="G$1" x="30.48" y="101.6" smashed="yes">
+<attribute name="NAME" x="35.56" y="97.79" size="1.27" layer="95"/>
+<attribute name="VALUE" x="35.56" y="95.25" size="1.27" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="CM2" gate="G$1" pin="SHIELD3"/>
-<pinref part="CM2" gate="G$1" pin="SHIELD2"/>
-<wire x1="24.13" y1="96.52" x2="26.67" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="CM2" gate="G$1" pin="SHIELD"/>
-<wire x1="26.67" y1="96.52" x2="29.21" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="29.21" y1="96.52" x2="31.75" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="31.75" y1="96.52" x2="34.29" y2="96.52" width="0.1524" layer="91"/>
-<junction x="31.75" y="96.52"/>
-<pinref part="CM2" gate="G$1" pin="SHIELD1"/>
-<junction x="26.67" y="96.52"/>
+<wire x1="25.4" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="96.52" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
+<junction x="33.02" y="96.52"/>
+<junction x="27.94" y="96.52"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="29.21" y1="93.98" x2="29.21" y2="96.52" width="0.1524" layer="91"/>
-<junction x="29.21" y="96.52"/>
+<wire x1="30.48" y1="93.98" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<junction x="30.48" y="96.52"/>
+<pinref part="CM3" gate="G$1" pin="SHIELD"/>
+<pinref part="CM3" gate="G$1" pin="SHIELD1"/>
+<pinref part="CM3" gate="G$1" pin="SHIELD2"/>
+<pinref part="CM3" gate="G$1" pin="SHIELD3"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -6082,8 +6126,8 @@ PCB</text>
 <net name="N$12" class="1">
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
-<pinref part="CM2" gate="G$1" pin="CENTER"/>
-<wire x1="83.82" y1="101.6" x2="34.29" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="CM3" gate="G$1" pin="CENTER"/>
 </segment>
 </net>
 </nets>
@@ -6149,10 +6193,6 @@ PCB</text>
 <instance part="GND6" gate="1" x="147.32" y="71.12" smashed="yes">
 <attribute name="VALUE" x="144.78" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="CM1" gate="G$1" x="38.1" y="129.54" smashed="yes">
-<attribute name="NAME" x="43.18" y="125.73" size="1.27" layer="95"/>
-<attribute name="VALUE" x="43.18" y="123.19" size="1.27" layer="95"/>
-</instance>
 <instance part="U$1" gate="G$1" x="88.9" y="127" smashed="yes">
 <attribute name="NAME" x="81.28" y="134.62" size="1.778" layer="95"/>
 <attribute name="VALUE" x="81.28" y="119.38" size="1.778" layer="96"/>
@@ -6180,6 +6220,10 @@ PCB</text>
 <attribute name="NAME" x="145.8214" y="77.47" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="150.622" y="77.47" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="CM2" gate="G$1" x="38.1" y="129.54" smashed="yes">
+<attribute name="NAME" x="43.18" y="125.73" size="1.27" layer="95"/>
+<attribute name="VALUE" x="43.18" y="123.19" size="1.27" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6187,8 +6231,8 @@ PCB</text>
 <net name="N$1" class="1">
 <segment>
 <wire x1="43.18" y1="129.54" x2="76.2" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="CM1" gate="G$1" pin="CENTER"/>
 <pinref part="U$1" gate="G$1" pin="SUM"/>
+<pinref part="CM2" gate="G$1" pin="CENTER"/>
 </segment>
 </net>
 <net name="N$2" class="1">
@@ -6230,19 +6274,19 @@ PCB</text>
 <pinref part="R3" gate="R" pin="1"/>
 </segment>
 <segment>
-<pinref part="CM1" gate="G$1" pin="SHIELD3"/>
-<pinref part="CM1" gate="G$1" pin="SHIELD2"/>
 <wire x1="33.02" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="CM1" gate="G$1" pin="SHIELD"/>
 <wire x1="35.56" y1="124.46" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="124.46" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <junction x="40.64" y="124.46"/>
-<pinref part="CM1" gate="G$1" pin="SHIELD1"/>
 <junction x="35.56" y="124.46"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="38.1" y1="121.92" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
 <junction x="38.1" y="124.46"/>
+<pinref part="CM2" gate="G$1" pin="SHIELD"/>
+<pinref part="CM2" gate="G$1" pin="SHIELD1"/>
+<pinref part="CM2" gate="G$1" pin="SHIELD2"/>
+<pinref part="CM2" gate="G$1" pin="SHIELD3"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
