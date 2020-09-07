@@ -1,8 +1,13 @@
 Quantity,MFG,MFG_PN,DIST,DIST_PN,Generic
-6,Vishay Foil Resistors (Division of Vishay Precision Group),Y402250R0000A9R,Digi-Key,804-1106-1-ND,Y
-1,Samtec Inc.,TFM-120-02-L-D-WT,Digi-Key,SAM10154-ND,N
+6,Vishay Dale,RCP0603W50R0GEB,Digi-Key,541-2655-1-ND,Y
+1,Samtec Inc.,TFM-120-01-L-D-RA,Digi-Key,SAM10145-ND,N
 4,Harwin Inc.,M55-7101242R,Digi-Key,952-3891-1-ND,N
 1,Harwin Inc.,M55-6021242R,Digi-Key,952-3851-1-ND,N
 5,Radiall,R107064070,Mouser,501-R107064070,N
 3,Mini-Circuits,QCN-19+,Mouser,139-QCN-19,N
 3,Mini-Circuits,QBA-07+,Mini-Circuits,QBA-07+,N
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
