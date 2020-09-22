@@ -6,10 +6,26 @@ $begin 'InterrogationCache'
 			IgnoreUnclassifiedObjects=false
 			SkipIntersectionChecks=false
 		$end 'Options'
-		Status=false
+		Status=true
 	$end 'ValidationStatus'
 	$begin 'BodyCaches'
+		$begin '6'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
+			$begin 'BoundingBox'
+				Low[3: -9.1288191577208906, -9.1288191577208906, -4.2929191577208883]
+				High[3: 9.1288191577208906, 9.1288191577208906, 65.058819157720876]
+				Exact=true
+				Valid=true
+			$end 'BoundingBox'
+		$end '6'
 		$begin '34'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -2.2682416942178008, -2.2682416942178008, 0.0099999999999999881]
 				High[3: 2.2849999999999997, 2.2682416942178008, 60.89823873087829]
@@ -18,6 +34,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '34'
 		$begin '26825'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: 2.1849999999999996, 0, -1.3877787807814457e-17]
 				High[3: 2.2849999999999997, 0, 0.0099999999999999881]
@@ -26,6 +46,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '26825'
 		$begin '28017'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -5, -5, -0.0035599999999999998]
 				High[3: 5, 5, 0]
@@ -34,6 +58,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '28017'
 		$begin '28119'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -5, -5, -0.020579999999999994]
 				High[3: 5, 5, -0.0035599999999999989]
@@ -42,6 +70,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '28119'
 		$begin '28221'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -5, -5, -0.022359999999999998]
 				High[3: 5, 5, -0.020580000000000001]
@@ -50,6 +82,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '28221'
 		$begin '28323'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -5, -5, -0.14174]
 				High[3: 5, 5, -0.022359999999999998]
@@ -58,6 +94,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '28323'
 		$begin '28425'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -5, -5, -0.14352000000000001]
 				High[3: 5, 5, -0.14174]
@@ -66,6 +106,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '28425'
 		$begin '28527'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -5, -5, -0.16053999999999996]
 				High[3: 5, 5, -0.14351999999999998]
@@ -74,6 +118,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '28527'
 		$begin '28629'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -5, -5, -0.1641]
 				High[3: 5, 5, -0.16053999999999999]
@@ -82,6 +130,10 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '28629'
 		$begin '29421'
+			$begin 'CheckStatus'
+				CheckLevel=20
+				Status=true
+			$end 'CheckStatus'
 			$begin 'BoundingBox'
 				Low[3: -2.2749999999999999, -2.2749999999999999, 0]
 				High[3: 2.2749999999999999, 2.2749999999999999, 60.929999999999993]

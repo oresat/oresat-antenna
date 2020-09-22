@@ -1,0 +1,9 @@
+$begin 'CacheDataVersion'
+	DataVersion=-1
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	zC='-1'
+	p='0'
+	radius='54mm'
+	xcut='20mm'
+$end 'VariableValues'

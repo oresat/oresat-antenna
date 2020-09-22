@@ -1,7 +1,7 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002020, month=000000000007, day=000000000015, hour=000000000001, min=000000000028, sec=000000000033)
+    time(year=000000002020, month=000000000009, day=000000000022, hour=000000000013, min=000000000053, sec=000000000040)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
@@ -11,10 +11,10 @@ $end '$base_index$'
 $begin 'SolutionBlock1'
 	ProductName=''
 	CircuitName='HFSSDesign1'
-	VersionID=812
+	VersionID=861
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=855
+	NextUniqueID=905
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_len_a=\'172mm\' UHF_len_b=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=811)
@@ -23,9 +23,9 @@ $begin 'SolutionBlock1'
 	$end 'VariationIDs'
 	$begin 'LinkedDataList'
 	$end 'LinkedDataList'
-	MeshAssemVersionID=276
+	MeshAssemVersionID=286
 	$begin 'NextAssemVersionID'
-		NextUniqueID=277
+		NextUniqueID=287
 		MoveBackwards=false
 	$end 'NextAssemVersionID'
 	$begin 'MI'
@@ -33,20 +33,56 @@ $begin 'SolutionBlock1'
 $end 'SolutionBlock1'
 $begin 'BlockMapName'
 	FileHeader='SolutionBlock1'
-	'SolutionKey(SimSetup=2, Instance=\'SetupDefinition\', Solution=-1, VersionID=812)'='SolutionBlock20'
-	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=3, VersionID=812)'='SolutionBlock21'
-	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=4, VersionID=813)'='SolutionBlock22'
+	'SolutionKey(SimSetup=2, Instance=\'SetupDefinition\', Solution=-1, VersionID=861)'='SolutionBlock25'
+	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=3, VersionID=861)'='SolutionBlock23'
+	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=4, VersionID=861)'='SolutionBlock24'
 $end 'BlockMapName'
-$begin 'SolutionBlock20'
+$begin 'SolutionBlock23'
+	SolutionName='AdaptivePass'
+	SolutionID=3
+	V=861
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2422000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock23'
+$begin 'SolutionBlock24'
+	SolutionName='LastAdaptive'
+	SolutionID=4
+	V=861
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(2422000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock24'
+$begin 'SolutionBlock25'
 	SimSetupID=2
 	SimSetupName='Sband'
-	VersionID=812
+	VersionID=861
 	IsImported=false
 	IsTable=false
 	SolveSetupID=0
-	MeshAssemVersionID=272
+	MeshAssemVersionID=280
 	$begin 'NextAssemVersionID'
-		NextUniqueID=273
+		NextUniqueID=281
 		MoveBackwards=false
 	$end 'NextAssemVersionID'
 	$begin 'ADP'
@@ -55,48 +91,12 @@ $begin 'SolutionBlock20'
 	$end 'SU'
 	$begin 'MI'
 	$end 'MI'
-$end 'SolutionBlock20'
-$begin 'SolutionBlock21'
-	SolutionName='AdaptivePass'
-	SolutionID=3
-	V=812
-	$begin 'States'
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(2422000000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-$end 'SolutionBlock21'
-$begin 'SolutionBlock22'
-	SolutionName='LastAdaptive'
-	SolutionID=4
-	V=813
-	$begin 'States'
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(2422000000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-$end 'SolutionBlock22'
+$end 'SolutionBlock25'
 $begin '$index$'
 	$begin '$index$'
-		SolutionBlock21(pos=2996, lin=49, lvl=0)
-		SolutionBlock22(pos=3354, lin=67, lvl=0)
-		SolutionBlock20(pos=2653, lin=30, lvl=0)
+		SolutionBlock23(pos=2653, lin=30, lvl=0)
+		SolutionBlock24(pos=3011, lin=48, lvl=0)
+		SolutionBlock25(pos=3369, lin=66, lvl=0)
 		SolutionBlock1(pos=370, lin=1, lvl=0)
 		BlockMapName(pos=2269, lin=24, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)

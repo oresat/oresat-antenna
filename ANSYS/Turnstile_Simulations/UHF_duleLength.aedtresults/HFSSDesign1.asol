@@ -1,16 +1,118 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002020, month=000000000007, day=000000000017, hour=000000000012, min=000000000045, sec=000000000058)
+    time(year=000000002020, month=000000000009, day=000000000022, hour=000000000013, min=000000000046, sec=000000000025)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000009810, lin=000000000256, lvl=000000000000)
+    $index$(pos=000000007153, lin=000000000145, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
-$begin 'OptimetricsResults'
-	'0:0'='OptimetricsResult1'
-$end 'OptimetricsResults'
+$begin 'SolutionBlock27'
+	SolutionName='AdaptivePass'
+	SolutionID=3
+	V=1088
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(436500000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock27'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=2, Instance=\'SetupDefinition\', Solution=-1, VersionID=1088)'='SolutionBlock30'
+	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=1023, VersionID=1088)'='SolutionBlock29'
+	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=3, VersionID=1088)'='SolutionBlock27'
+	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=4, VersionID=1088)'='SolutionBlock28'
+$end 'BlockMapName'
+$begin 'SolutionBlock28'
+	SolutionName='LastAdaptive'
+	SolutionID=4
+	V=1088
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(436500000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock28'
+$begin 'SolutionBlock29'
+	SolutionName='Sweep'
+	SolutionID=1023
+	V=1088
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(396000000, 401000000, 406000000, 411000000, 416000000, 421000000, 426000000, 431000000, 436000000, 441000000, 446000000, 451000000, 456000000, 461000000, 466000000, 471000000, 476000000)
+		SolutionType=5
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+$end 'SolutionBlock29'
+$begin 'SolutionBlock30'
+	SimSetupID=2
+	SimSetupName='UHF'
+	VersionID=1088
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	MeshAssemVersionID=282
+	$begin 'NextAssemVersionID'
+		NextUniqueID=283
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+	$end 'ADP'
+	$begin 'SU'
+	$end 'SU'
+	$begin 'MI'
+	$end 'MI'
+$end 'SolutionBlock30'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=1088
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=1159
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_len_a=\'140mm\' UHF_len_b=\'190mm\' UHF_x=\'29mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=1083)
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_len_a=\'140mm\' UHF_len_b=\'190mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=960)
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_len_a=\'172mm\' UHF_len_b=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=767)
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' Sband_len=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.5mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zPlane=\'0mm\'', ID=419)
+		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'45deg\' Lband_len=\'59mm\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_len_a=\'140mm\' UHF_len_b=\'190mm\' UHF_x=\'29mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=1085)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	MeshAssemVersionID=288
+	$begin 'NextAssemVersionID'
+		NextUniqueID=289
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'MI'
+	$end 'MI'
+$end 'SolutionBlock1'
 $begin 'OptimetricsResult1'
 	V=2
 	svi('Ant_Phi', '45deg')
@@ -47,234 +149,21 @@ $end 'OptimetricsResult1'
 $begin 'ResponseSurfaceCache'
 	ResponseSurfaceCache()
 $end 'ResponseSurfaceCache'
-$begin 'SolutionBlock25'
-	SimSetupID=2
-	SimSetupName='UHF'
-	VersionID=959
-	$begin 'EmConvergenceData'
-		EmConv(VID=960, Ver=959, EmConv='DV960_S2_V959.EMConvData')
-	$end 'EmConvergenceData'
-	IsImported=false
-	IsTable=false
-	SolveSetupID=0
-	$begin 'CurrMeshes'
-		M(VID=960, Ver=959, Dir='DV960_S2_V959.cmesh/')
-	$end 'CurrMeshes'
-	MeshAssemVersionID=277
-	$begin 'NextAssemVersionID'
-		NextUniqueID=278
-		MoveBackwards=false
-	$end 'NextAssemVersionID'
-	$begin 'ADP'
-		$begin 'SubData'
-			ID=0
-			ADP(VID=960, Ver=959, Dir='DV960_S2_ADP0_V959.sd/')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=1
-			ADP(VID=960, Ver=959, Dir='DV960_S2_ADP1_V959.sd/')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=2
-			ADP(VID=960, Ver=959, Dir='DV960_S2_ADP2_V959.sd/')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=3
-			ADP(VID=960, Ver=959, Dir='DV960_S2_ADP3_V959.sd/')
-		$end 'SubData'
-	$end 'ADP'
-	$begin 'SU'
-		$begin 'SubData'
-			ID=1
-			SU(VID=960, Ver=959, File='DV960_S2_SD1_V959.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=2
-			SU(VID=960, Ver=959, File='DV960_S2_SD2_V959.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=3
-			SU(VID=960, Ver=959, File='DV960_S2_SD3_V959.su')
-		$end 'SubData'
-	$end 'SU'
-	$begin 'WaveAdapt'
-		WA(VID=960, Ver=959, A=1)
-	$end 'WaveAdapt'
-	$begin 'LastPassNumbers'
-		LP(VID=960, Ver=959, P=3)
-	$end 'LastPassNumbers'
-	$begin 'Profiles'
-		P(VID=960, Ver=959, File='DV960_S2_V959.profile')
-	$end 'Profiles'
-	$begin 'MI'
-		$begin 'SubData'
-			ID=0
-			MI(VID=960, Ver=959, Dir='DV960_S2_MI0_V959.sd/')
-		$end 'SubData'
-	$end 'MI'
-$end 'SolutionBlock25'
-$begin 'BlockMapName'
-	FileHeader='SolutionBlock1'
-	'SolutionKey(SimSetup=2, Instance=\'SetupDefinition\', Solution=-1, VersionID=959)'='SolutionBlock25'
-	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=1023, VersionID=0)'='SolutionBlock26'
-	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=3, VersionID=959)'='SolutionBlock23'
-	'SolutionKey(SimSetup=2, Instance=\'SolutionDefinition\', Solution=4, VersionID=959)'='SolutionBlock24'
-$end 'BlockMapName'
-$begin 'SolutionBlock26'
-	SolutionName='Sweep'
-	SolutionID=1023
-	V=0
-	$begin 'States'
-		F(VID=960, Ver=0)
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(396000000, 401000000, 406000000, 411000000, 416000000, 421000000, 426000000, 431000000, 436000000, 441000000, 446000000, 451000000, 456000000, 461000000, 466000000, 471000000, 476000000)
-		SolutionType=5
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=0
-	KeepAllFastSweepFields=false
-	$begin 'M'
-		$begin 'SubData'
-			ID=0
-			M(VID=960, Ver=0, File='DV960_SOL1023_M0_V0.sd')
-		$end 'SubData'
-	$end 'M'
-	$begin 'TransientSolveStauts'
-		SS(VID=960, Ver=0, SS=1)
-	$end 'TransientSolveStauts'
-	$begin 'SolverUsage'
-		IDDblMap(1035, 476000000, 1036, 396000000, 1038, 416249999.9999999, 1039, 456250000)
-		$begin 'DataMap'
-			VID=960
-			Ver=0
-			SU(DblID=1036, SU='DV960_S1023_V0_F1036_SU.txt')
-			SU(DblID=1038, SU='DV960_S1023_V0_F1038_SU.txt')
-			SU(DblID=1039, SU='DV960_S1023_V0_F1039_SU.txt')
-			SU(DblID=1035, SU='DV960_S1023_V0_F1035_SU.txt')
-		$end 'DataMap'
-	$end 'SolverUsage'
-$end 'SolutionBlock26'
-$begin 'SolutionBlock23'
-	SolutionName='AdaptivePass'
-	SolutionID=3
-	V=959
-	$begin 'States'
-		F(VID=960, Ver=959)
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(436500000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-	$begin 'M'
-		$begin 'SubData'
-			ID=1
-			M(VID=960, Ver=959, File='DV960_SOL3_M1_V959.sd')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=2
-			M(VID=960, Ver=959, File='DV960_SOL3_M2_V959.sd')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=3
-			M(VID=960, Ver=959, File='DV960_SOL3_M3_V959.sd')
-		$end 'SubData'
-	$end 'M'
-$end 'SolutionBlock23'
-$begin 'SolutionBlock24'
-	SolutionName='LastAdaptive'
-	SolutionID=4
-	V=959
-	$begin 'States'
-		F(VID=960, Ver=959)
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(436500000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-	$begin 'M'
-		$begin 'SubData'
-			ID=0
-			M(VID=960, Ver=959, File='DV960_SOL4_M0_V959.sd')
-		$end 'SubData'
-	$end 'M'
-	$begin 'Fields'
-		IDDblMap(818, 4365000000, 957, 436500000)
-		$begin 'DataMap'
-			VID=960
-			Ver=959
-			F(DblID=957, Dir='DV960_S4_V959_F957/')
-		$end 'DataMap'
-	$end 'Fields'
-$end 'SolutionBlock24'
-$begin 'SolutionBlock1'
-	ProductName=''
-	CircuitName='HFSSDesign1'
-	VersionID=959
-	PostProcess=false
-	LossLess=true
-	NextUniqueID=1046
-	MoveBackwards=false
-	$begin 'VariationIDs'
-		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_len_a=\'140mm\' UHF_len_b=\'190mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=960)
-		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len=\'31mm\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_len_a=\'172mm\' UHF_len_b=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', ID=767)
-		Map(V='Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' Sband_len=\'31mm\' Sband_x=\'-0.65mm\' Sband_y=\'4.19mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.5mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zPlane=\'0mm\'', ID=419)
-	$end 'VariationIDs'
-	$begin 'LinkedDataList'
-	$end 'LinkedDataList'
-	$begin 'InitialMeshes'
-		M(VID=960, Ver=959, Dir='DV960_V959.imesh/')
-	$end 'InitialMeshes'
-	MeshAssemVersionID=282
-	$begin 'NextAssemVersionID'
-		NextUniqueID=283
-		MoveBackwards=false
-	$end 'NextAssemVersionID'
-	$begin 'DefinitionMeshes'
-		$begin 'DefMeshes_Comp-1'
-			DefinitionID=-1
-			VersionID=281
-			VIDMap('Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len_a=\'140mm\' UHF_len_b=\'190mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', 1020, 'Ant_diameter=\'2mm\' Ant_lead=\'1mm\' Ant_Phi=\'45deg\' Ant_Theta=\'0deg\' Lband_len_a=\'59mm\' Lband_len_b=\'59mm\' Lband_x=\'-0.65mm\' Lband_y=\'-4.19mm\' p=\'0\' Sband_len_a=\'31mm\' Sband_len_b=\'31mm\' Snap_angle=\'1.30154739523656rad\' Snap_laminant=\'0.25mm\' Snap_len=\'200mm\' Snap_radius=\'0.0138296923076923meter\' Snap_width=\'18mm\' UHF_len_a=\'172mm\' UHF_len_b=\'172mm\' UHF_x=\'30mm\' UHF_y=\'29mm\' zC=\'0\' zPlane=\'-10mm\'', 813)
-			DM(VID=1020, Ver=281, Dir='NDV1020_V281.dmesh/')
-		$end 'DefMeshes_Comp-1'
-	$end 'DefinitionMeshes'
-	$begin 'MI'
-		$begin 'SubData'
-			ID=0
-			MI(VID=960, Ver=959, Dir='DV960_MI0_V959.sd/')
-		$end 'SubData'
-	$end 'MI'
-$end 'SolutionBlock1'
+$begin 'OptimetricsResults'
+	'0:0'='OptimetricsResult1'
+$end 'OptimetricsResults'
 $begin '$index$'
 	$begin '$index$'
-		SolutionBlock1(pos=6598, lin=218, lvl=0)
-		OptimetricsResults(pos=370, lin=1, lvl=0)
-		BlockMapName(pos=3597, lin=106, lvl=0)
-		OptimetricsResult1(pos=452, lin=4, lvl=0)
-		ResponseSurfaceCache(pos=1952, lin=37, lvl=0)
-		SolutionBlock23(pos=5231, lin=152, lvl=0)
-		SolutionBlock24(pos=5923, lin=185, lvl=0)
-		SolutionBlock26(pos=4087, lin=113, lvl=0)
-		SolutionBlock25(pos=2034, lin=40, lvl=0)
+		OptimetricsResults(pos=7071, lin=142, lvl=0)
+		SolutionBlock27(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=728, lin=19, lvl=0)
+		SolutionBlock28(pos=1224, lin=26, lvl=0)
+		SolutionBlock29(pos=1582, lin=44, lvl=0)
+		SolutionBlock30(pos=2111, lin=62, lvl=0)
+		SolutionBlock1(pos=2453, lin=81, lvl=0)
+		OptimetricsResult1(pos=5489, lin=106, lvl=0)
+		ResponseSurfaceCache(pos=6989, lin=139, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=9810, lin=256, lvl=0)
+		$index$(pos=7153, lin=145, lvl=0)
 	$end '$index$'
 $end '$index$'

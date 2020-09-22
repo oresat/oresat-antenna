@@ -1,0 +1,81 @@
+
+=== constructing optimizer ===
+
+--- Begin Model Info ---
+# inp variables = 2
+# out variables = 1
+Lower Bounds(inp) follow
+DoubleArr: dim = 2
+array[0] = 0.044
+array[1] = 0.061
+Upper Bounds(inp) follow
+DoubleArr: dim = 2
+array[0] = 0.052
+array[1] = 0.069
+--- Begin ConstraintArr Info ---
+Array dim = 4
+Begin Linear Constraint
+RHS = -0.044
+Coef vector follows: DoubleArr: dim = 2
+array[0] = -1
+array[1] = 0
+End Linear Constraint
+Begin Linear Constraint
+RHS = 0.052
+Coef vector follows: DoubleArr: dim = 2
+array[0] = 1
+array[1] = 0
+End Linear Constraint
+Begin Linear Constraint
+RHS = -0.061
+Coef vector follows: DoubleArr: dim = 2
+array[0] = 0
+array[1] = -1
+End Linear Constraint
+Begin Linear Constraint
+RHS = 0.069
+Coef vector follows: DoubleArr: dim = 2
+array[0] = 0
+array[1] = 1
+End Linear Constraint
+--- End ConstraintArr Info ---
+Min steps follow
+DoubleArr: dim = 2
+array[0] = 0.00059
+array[1] = 0.00059
+Max steps follow
+DoubleArr: dim = 2
+array[0] = 0.0059
+array[1] = 0.0059
+X-scales follow
+DoubleArr: dim = 2
+array[0] = 2e-33
+array[1] = 2e-33
+Max scaled bondary violations follow
+DoubleArr: dim = 4
+array[0] = 0
+array[1] = 0
+array[2] = 0
+array[3] = 0
+--- End Model Info ---
+
+--- Begin Generic Optimizer Info ---
+Cost limit = 0
+Iter limit = 100
+Act iter # = 0
+InitInstance InstanceListIterator is invalid
+
+BestInstance InstanceListIterator is invalid
+
+--- End Generic Optimizer Info ---
+
+--- Begin OptiMd Info ---
+Noise = 0.0001
+maxStepCountLimit =5
+noSuccessCountLimit =3
+threePointMode = OFF
+variableErrorMode = ON
+--- End OptiMd Info ---
+
+UseBestinList	Init:Feasible&Solved	input	0.044	0.061	output	-5.696440358992443
+UseInitInst	initUpdate	input	0.044	0.061	output	-5.696440358992443

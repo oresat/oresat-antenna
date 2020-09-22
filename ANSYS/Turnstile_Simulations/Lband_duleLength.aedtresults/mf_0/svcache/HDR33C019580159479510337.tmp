@@ -1,6 +1,6 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=5
+	NextUniqueID=7
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
@@ -42,6 +42,33 @@ $begin 'SimValueInfos'
 			MatrixSize(0, 0)
 		$end 'SimValueParams'
 	$end 'SimValue'
+	$begin 'SimValue'
+		ID=5
+		$begin 'SimValueParams'
+			QuantityName='St(L_Band_a_T1,L_Band_a_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=6
+		$begin 'SimValueParams'
+			QuantityName='St(L_Band_b_T1,L_Band_b_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=3
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=4
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
 $end 'SimValueCache'
